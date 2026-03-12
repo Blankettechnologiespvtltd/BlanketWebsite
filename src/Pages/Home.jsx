@@ -28,10 +28,10 @@ const Home = () => {
 
   const services = [
     {
-      icon: <FaLaptopCode className="text-blue-600 text-4xl" />,
+      icon: <FaLaptopCode className="text-blue-600 text-4xl " />,
       title: "Web Development",
-      desc: "High-performance, secure, scalable websites built to convert visitors into customers.",
-      offer: "Talk to Web Expert ",
+      desc: "We design and develop high-performance websites with modern technologies to deliver seamless user experiences.",
+      offer: " Custom Websites, React/Next.js Apps, eCommerce Solutions ",
       benefits: "Fast, secure, and scalable online presence for your business.",
       images: ["/web1st.jpg", "/web2nd.jpg"],
     },
@@ -39,7 +39,7 @@ const Home = () => {
       icon: <FaBullhorn className="text-green-600 text-4xl" />,
       title: "Digital Marketing",
       desc: "SEO & paid campaigns focused on traffic, leads, and conversions.",
-      offer: "Get Growth Plan",
+      offer: " SEO, Google Ads, Social Media Marketing",
       benefits: "Increased engagement, traffic, and conversions.",
       images: ["/marketing1.jpg", "/marketing2.jpg"],
     },
@@ -47,7 +47,7 @@ const Home = () => {
       icon: <FaGlobe className="text-purple-600 text-4xl" />,
       title: "Cloud Solutions",
       desc: "Cost-effective cloud setup & migration on AWS, Azure & GCP.",
-      offer: "Book Cloud Consultation ",
+      offer: " AWS, Azure, GCP Cloud Setup & Monitoring ",
       benefits: "Reduced costs with improved flexibility and security.",
       images: ["/cloud1.jpg", "/cloud2.jpg"],
     },
@@ -55,7 +55,7 @@ const Home = () => {
       icon: <FaBriefcase className="text-orange-600 text-4xl" />,
       title: "Business Automation",
       desc: "CRM, ERP & workflows that save time and reduce operational cost. ",
-      offer: "Automate My Business",
+      offer: " CRM, ERP, Workflow Automation",
       benefits: "Optimized operations and improved productivity.",
       images: ["/automation1.jpg", "/automation2.jpg"],
     },
@@ -147,15 +147,12 @@ const Home = () => {
         {/* Content */}
         <div className="relative z-10 text-center  ">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text ">
-           Scalable Web, Cloud & Digital Solutions That Help Businesses Grow Faster 
+            Building The Future With Technology & Innovation
           </h1>
 
           <p className="text-lg md:text-2xl max-w-2xl mx-auto mb-10 text-gray-300">
-            We help startups, SMEs, and enterprises build high-performance websites, 
- 
-            <br />
-            cloud systems, and digital platforms that deliver real business results. 
-
+            Blanket Technologies — Elevate your digital presence with smart,
+            scalable & creative IT solutions.
           </p>
 
           <div className="mb-5">
@@ -228,7 +225,7 @@ const Home = () => {
                   {item.title}
                 </h3>
                 <p className="text-gray-400 text-sm">{item.desc}</p>
-              </div> 
+              </div>
             ))}
           </div>
         </div>
@@ -255,20 +252,24 @@ const Home = () => {
               }`}
             >
               <div className="space-y-4">
-                <div className="flex items-center gap-3">
+                <div className="flex items-center  gap-4">
                   {service.icon}
                   <h3 className="text-2xl font-semibold text-gray-800">
                     {service.title}
                   </h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed">{service.desc}</p>
-                <button className="px-6 py-2 bg-blue-600 text-white rounded-full hover:opacity-90 transition">
-                  {/* <span className="font-semibold">What We Offer:</span>{" "} */}
-                  {service.offer}
-                </button>
-                <p className="text-green-600 font-medium">
-                  <span className="font-semibold">Benefits:</span>{" "}
-                  {service.benefits}
+                <p className="text-gray-600 leading-relaxed  ">
+                  {service.desc}
+                </p>
+                {/* <button className="px-6 py-2  bg-blue-600 text-white rounded-full hover:opacity-90 transition"> */}
+                <span className="font-semibold text-blue-600">
+                  {" "}
+                  What We Offer :
+                </span>{" "}
+                {service.offer}
+                {/* </button> */}
+                <p className="text-green-600 font-medium  mt-5">
+                  <span className="font-semibold">{service.benefits}</span>{" "}
                 </p>
               </div>
 
@@ -288,7 +289,7 @@ const Home = () => {
       </section>
 
       {/* EXPERTISE GRID */}
-      {/* <section className="py-7 bg-gray-50 text-center">
+      <section className="py-7 bg-gray-50 text-center">
         <div className="max-w-6xl mx-auto px-6 mb-0">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
             Our <span className="text-blue-600">Expertise</span>, Your Success
@@ -345,7 +346,7 @@ const Home = () => {
             </button>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* TRUST / STATS */}
       <section className="relative overflow-hidden py-10 bg-linear-to-br from-gray-50 via-white to-blue-50">
@@ -365,7 +366,6 @@ const Home = () => {
       <ConsultancySection />
       <Footer />
     </div>
-    
   );
 };
 
