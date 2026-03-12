@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router";
 import { useEffect } from "react";
 import Navbar from "./Navbar";
 import ScrollProgress from "./ScrollProgress";
+import Footer from "./Footer";
 
 const RootLayout = () => {
   const location = useLocation();
@@ -18,6 +19,7 @@ const RootLayout = () => {
       <ScrollProgress />
 
       <Outlet />
+     
     </div>
   );
 };

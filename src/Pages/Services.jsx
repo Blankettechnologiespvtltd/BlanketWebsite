@@ -5,6 +5,7 @@ import AutoCarousel from "../Components/AutoCarousel";
 
 const Services = () => {
   const services = [
+ 
     {
       title: "Web Development",
       subtitle: "Front-End and Back-End",
@@ -49,6 +50,13 @@ const Services = () => {
       desc: "Secure, seamless, and scalable online payment solutions for your business. ",
       link: "/payment-gateway",
     },
+    //     {
+    //   title: "SAP",
+    //   subtitle: "Front-End and Back-End",
+    //   desc: "We build responsive, scalable web apps using React, Next.js, and modern tech stacks.",
+    //   image: "/webdev.jpg",
+    //   link: "/web-designing",
+    // },
   ];
   const counsaltancyServices = [
     

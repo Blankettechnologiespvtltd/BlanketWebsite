@@ -34,6 +34,8 @@ import PermanentHiring from './Pages/PermanentHiring';
 import ProjectBasedHiring from './Pages/ProjectBasedHiring';
 import PrivacyPolicyPage from './Components/privacypolicy';
 import TermsConditionsPage from './Components/TermsConditionsPage';
+import SapImplementation from "./Pages/SapImplementation";
+import Footer from './Components/Footer';
 
 
 
@@ -166,6 +168,12 @@ const App = () => {
     path: "/TermsConditionsPage",
     element: <div><TermsConditionsPage /></div>,
   },
+  
+  {
+    path: "/Sap",
+    element: <div><SapImplementation /> <Footer /> </div>,
+  },
+  
   
     ],
   },
