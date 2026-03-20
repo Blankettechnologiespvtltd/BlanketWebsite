@@ -8,6 +8,8 @@ import Home from "./Pages/Home"
 import Services from "./Pages/Services"
 import Careers from "./Pages/Careers"
 import Contact from "./Pages/Contact"
+import Testimonials from "./Components/Testimonials"
+
 import AnimatedHero from './AnimatedHero';
 import WebDevelopment from './Pages/WebDevelopment';
 import UIUXDesign from './Pages/UIUXDesign';
@@ -36,7 +38,6 @@ import PrivacyPolicyPage from './Components/privacypolicy';
 import TermsConditionsPage from './Components/TermsConditionsPage';
 import SapImplementation from "./Pages/SapImplementation";
 import Footer from './Components/Footer';
-
 
 
 
@@ -132,34 +133,34 @@ const App = () => {
     path: "/Resume",
     element: <div>< ResumeUpload/></div>,
   },
-  {
-    path: "/RPO",
-    element: <div><RPO /></div>,
-  },
-  {
-    path: "/Payroll",
-    element: <div><PayrollPage /></div>,
-  },
-  {
-    path: "/GlobalSearch",
-    element: <div><GlobalSearch /></div>,
-  },
-  {
-    path: "/ExecutiveSearch",
-    element: <div><ExecutiveSearch /></div>,
-  },
-  {
-    path: "/ContractStaffing",
-    element: <div><ContractStaffing /></div>,
-  },
-   {
-    path: "/PermanentHiring",
-    element: <div><PermanentHiring /></div>,
-  },
-   {
-    path: "/ProjectBasedHiring",
-    element: <div><ProjectBasedHiring /></div>,
-  },
+  // {
+  //   path: "/RPO",
+  //   element: <div><RPO /></div>,
+  // },
+  // {
+  //   path: "/Payroll",
+  //   element: <div><PayrollPage /></div>,
+  // },
+  // {
+  //   path: "/GlobalSearch",
+  //   element: <div><GlobalSearch /></div>,
+  // },
+  // {
+  //   path: "/ExecutiveSearch",
+  //   element: <div><ExecutiveSearch /></div>,
+  // },
+  // {
+  //   path: "/ContractStaffing",
+  //   element: <div><ContractStaffing /></div>,
+  // },
+  //  {
+  //   path: "/PermanentHiring",
+  //   element: <div><PermanentHiring /></div>,
+  // },
+  //  {
+  //   path: "/ProjectBasedHiring",
+  //   element: <div><ProjectBasedHiring /></div>,
+  // },
   {
     path: "/privacypolicy",
     element: <div><PrivacyPolicyPage /></div>,
@@ -172,6 +173,10 @@ const App = () => {
   {
     path: "/Sap",
     element: <div><SapImplementation /> <Footer /> </div>,
+  },
+   {
+    path: "/testimonial",
+    element: <div><Testimonials /> <Footer /> </div>,
   },
   
   

@@ -1,32 +1,33 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Aarav Sharma",
-    position: "CEO, NovaTech",
+    name: "Benjamin Scott",
+    position: "Technology Executive, JovaTech",
     review:
       "Blanket Technologies completely transformed our digital presence. The website they built is fast, modern, and user-friendly.",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
-    name: "Priya Mehta",
-    position: "Marketing Head, VisionPro",
+    name: "Sophia Harris",
+    position: "Marketing Head, BisionPro",
     review:
       "Their digital marketing team delivered beyond expectations. We saw 200% growth in leads within two months!",
     image: "https://randomuser.me/api/portraits/women/45.jpg",
   },
   {
-    name: "Rohan Verma",
-    position: "Founder, SkyZone",
+    name: "Matthew Robinson",
+    position: "Technical Lead, HkyZone",
     review:
       "Professional, creative, and result-oriented. Blanket Technologies is our go-to partner for every web project.",
     image: "https://randomuser.me/api/portraits/men/76.jpg",
   },
   {
-    name: "Sneha Patel",
-    position: "Product Manager, CloudSync",
+    name: "Mia Allen",
+    position: "Product Manager, CloudSyn",
     review:
       "Their attention to detail and support after delivery are unmatched. Highly recommend their services!",
     image: "https://randomuser.me/api/portraits/women/68.jpg",
@@ -52,7 +53,7 @@ const Testimonials = () => {
   const current = testimonials[index];
 
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-gray-100 py-16 mt-10">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-10 text-gray-800">
           What Our Clients Say
@@ -112,7 +113,11 @@ const Testimonials = () => {
               }`}
             ></div>
           ))}
+
+          
         </div>
+        
+          
       </div>
     </section>
   );

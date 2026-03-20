@@ -107,8 +107,9 @@ const Navbar = () => {
 
   const navItems = [
     {
-      title: "Services",
+      title: " Our Services",
       submenu: [
+               { name: "Staffing", link: "/staffing" },
         { name: "Web Designing", link: "/web-designing" },
         { name: "UI/UX Designing", link: "/ui-ux-designing" },
         { name: "App Development", link: "/app-development" },
@@ -148,18 +149,18 @@ const Navbar = () => {
       ],
     },
     // { title: "Blog", link: "/blog" },
-    {
-      title: "Recruitment Services",
-      submenu: [
-        { name: "RPO", link: "/RPO" },
-        { name: "Payroll", link: "/Payroll" },
-        { name: "Global Search", link: "/GlobalSearch" },
-        { name: "Executive Search", link: "/ExecutiveSearch" },
-        { name: "Contract Staffing", link: "/ContractStaffing" },
-        { name: "Permanent Hiring", link: "/PermanentHiring" },
-        { name: "Project Based Hiring", link: "/ProjectBasedHiring" },
-      ],
-    },
+    // {
+    //   title: "Recruitment Services",
+    //   submenu: [
+    //     { name: "RPO", link: "/RPO" },
+    //     { name: "Payroll", link: "/Payroll" },
+    //     { name: "Global Search", link: "/GlobalSearch" },
+    //     { name: "Executive Search", link: "/ExecutiveSearch" },
+    //     { name: "Contract Staffing", link: "/ContractStaffing" },
+    //     { name: "Permanent Hiring", link: "/PermanentHiring" },
+    //     { name: "Project Based Hiring", link: "/ProjectBasedHiring" },
+    //   ],
+    // },
     // {
     //   title: "SAP",
     //   submenu: [
@@ -175,15 +176,15 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white/70 backdrop-blur-lg shadow-md z-50 border-b border-blue-100">
-      <div className="max-w-[1400px] mx-auto flex justify-between items-center px-6 py-4">
+    <nav className="absolute top-0 left-0 w-full  bg-transparent z-100 text-white    ">
+      <div className="max-w-[1400px] mx-auto flex justify-between items-center px-6 ">
         {/* Logo */}
         <Link to="/" className="font-bold text-blue-700">
-          <img src="/fix.png" className="h-14" alt="logo" />
+          <img src="/fix1.png" className="h-[10rem] w-[16rem]" alt="logo" />
         </Link>
 
         {/* DESKTOP MENU */}
-        <ul className="hidden md:flex space-x-8 items-center font-medium whitespace-nowrap text-gray-700">
+        <ul className="hidden md:flex space-x-8 items-center font-medium whitespace-nowrap text-white">
          {navItems.map((item, index) => (
   <li
     key={index}
@@ -196,7 +197,7 @@ const Navbar = () => {
   >
     <div className="flex items-center gap-1 cursor-pointer">
       {item.link ? (
-        <Link to={item.link} className="hover:text-blue-600">
+        <Link to={item.link} className=" hover:text-blue-600">
           {item.title}
         </Link>
       ) : (

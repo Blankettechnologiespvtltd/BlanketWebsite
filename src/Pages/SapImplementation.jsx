@@ -172,7 +172,7 @@
 
 // Embedded Analytics and Reporting
 
-// By integrating these areas into a unified system, 
+// By integrating these areas into a unified system,
 // businesses can improve collaboration, reduce inefficiencies,
 //  and make faster data-driven decisions.
 //         </p>
@@ -231,7 +231,7 @@ import {
 } from "lucide-react";
 
 function SapImplementation() {
-  const Navigate = useNavigate()
+  const navigate = useNavigate();
   const services = [
     {
       title: "SAP S/4HANA Implementation",
@@ -286,36 +286,25 @@ function SapImplementation() {
   return (
     <div className="font-sans text-gray-800 overflow-hidden">
       {/* Hero */}
-      {/* <section className="relative bg-gradient-to-br from-indigo-700 via-purple-700 to-pink-600 text-white py-24 text-center px-6">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-            SAP Services & Implementation
-          </h1>
-          <p className="text-lg md:text-xl opacity-90 mb-10">
-            Accelerate digital transformation with intelligent SAP solutions.
-            We implement, optimize, and scale enterprise systems for modern
-            businesses.
-          </p>
-          <button className="bg-white text-indigo-700 px-8 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition">
-            Get Free Consultation
-          </button>
-        </div>
-      </section> */}
-       <section className="bg-gradient-to-r  from-pink-600 to-purple-600 text-white py-20 text-center px-6 mt-20">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">SAP Services & Implementation </h1>
+
+      <section className="bg-gradient-to-r  from-pink-600 to-purple-600 text-white py-20 text-center px-6 mt-20">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          SAP Services & Implementation{" "}
+        </h1>
 
         <p className="max-w-2xl mx-auto mb-8">
-         Accelerate your digital transformation with expert SAP implementation
+           Accelerate your digital transformation with expert SAP implementation
           services. We help businesses deploy SAP solutions efficiently and
           maximize ROI.
-       </p>
+        </p>
 
-         <button className="bg-white text-blue-900 px-6 py-3 rounded-2xl font-semibold" onClick={()=> Navigate("/contact")}>
-        Contact Us
-       
-         </button>
-       </section>
+        <button
+          className="bg-white text-blue-900 px-6 py-3 rounded-2xl font-semibold"
+          onClick={() => navigate("/contact")}
+        >
+          Contact Us
+        </button>
+      </section>
 
       {/* Services */}
       <section className="py-20 px-6 bg-gray-50">
@@ -378,7 +367,7 @@ function SapImplementation() {
       </section>
 
       {/* Content Section */}
-      <section className="py-20 px-6 max-w-5xl mx-auto leading-relaxed">
+      {/* <section className="py-20 px-6 max-w-5xl mx-auto leading-relaxed">
         <h2 className="text-3xl font-bold mb-6 text-center">
           Transform Your Business with Advanced SAP Industry & Digital Solutions
         </h2>
@@ -420,7 +409,82 @@ function SapImplementation() {
             </div>
           ))}
         </div>
+      </section> */}
+      <section className="py-20 px-6 max-w-6xl mx-auto">
+        {/* Heading */}
+        {/* <div className="text-center max-w-3xl mx-auto mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Transform Your Business with Advanced SAP Industry & Digital
+            Solutions
+          </h2>
+          <p className="text-gray-600 text-lg leading-relaxed">
+            In today’s data-driven world, businesses require intelligent systems
+            that support real-time decision-making. SAP is a leading enterprise
+            software provider that enables organizations to manage operations
+            through advanced ERP solutions. SAP S/4HANA serves as a powerful
+            digital core, integrating business processes, analytics, and
+            automation into a single intelligent platform.
+          </p>
+        </div> */}
+        <div className="text-center max-w-3xl mx-auto mb-14">
+  <h2 className="text-3xl md:text-4xl font-bold mb-6">
+    Transform Your Business with Advanced SAP Digital Solutions
+  </h2>
+  <p className="text-gray-600 text-lg leading-relaxed">
+    Empower your organization with 
+    <span className="font-semibold text-gray-800"> real-time insights</span>, 
+    <span className="font-semibold text-gray-800"> intelligent automation</span>, and 
+    <span className="font-semibold text-gray-800"> connected operations</span>.
+    SAP helps businesses simplify complexity and accelerate performance.
+    <span className="font-semibold text-gray-800"> SAP S/4HANA</span> unifies
+    your processes, data, and analytics into one intelligent digital core.
+  </p>
+</div>
+
+        {/* About */}
+        <div className="bg-gradient-to-r from-indigo-50 to-white p-8 rounded-2xl shadow-sm mb-16">
+          <h3 className="text-2xl md:text-3xl font-bold mb-4 text-center">
+            What is SAP S/4HANA?
+          </h3>
+          <p className="text-gray-700 text-lg leading-relaxed text-center max-w-3xl mx-auto">
+            SAP S/4HANA is the next-generation business suite built on the SAP
+            HANA in-memory database. It delivers real-time analytics, predictive
+            capabilities, and streamlined workflows across departments, helping
+            Enterprises operate faster and smarter.
+          </p>
+        </div>
+
+        {/* Business Areas */}
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-10 text-center">
+            Key Business Areas Supported
+          </h3>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              "Finance and Accounting",
+              "Sales and Marketing",
+              "Supply Chain Management",
+              "Manufacturing",
+              "Human Resources",
+              "Procurement",
+              "Asset Management",
+              "Research & Development",
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="group flex items-center gap-4 bg-white border border-gray-100 p-5 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+              >
+                <div className="bg-indigo-100 text-indigo-700 p-2 rounded-lg group-hover:bg-indigo-600 group-hover:text-white transition">
+                  <CheckCircle2 size={20} />
+                </div>
+                <span className="font-medium text-gray-700">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
+      
 
       {/* CTA */}
       <section className="py-20 px-6 bg-gradient-to-r from-pink-600 to-indigo-700 text-white text-center">
@@ -430,8 +494,11 @@ function SapImplementation() {
         <p className="text-lg mb-10 opacity-90">
           Partner with certified SAP experts to accelerate your digital journey.
         </p>
-        <button className="bg-white text-indigo-700 px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition" onClick={()=> Navigate("/contact")}>
-     Contact Us
+        <button
+          className="bg-white text-indigo-700 px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition"
+          onClick={() => navigate("/contact")}
+        >
+          Contact Us
         </button>
       </section>
     </div>
@@ -439,3 +506,4 @@ function SapImplementation() {
 }
 
 export default SapImplementation;
+

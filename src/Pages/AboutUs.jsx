@@ -1,10 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Footer from "../Components/Footer";
+import ScrollProcess from "../Components/ScrollProgress"
 
 const AboutUs = () => {
   return (
     <div className="bg-gray-50 text-gray-800 mt-[5rem]">
+      <ScrollProcess />
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-pink-700 to-indigo-700 text-white py-20 px-6 text-center">
         <motion.h1
