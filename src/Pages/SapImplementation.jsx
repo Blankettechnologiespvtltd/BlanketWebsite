@@ -287,7 +287,7 @@ function SapImplementation() {
     <div className="font-sans text-gray-800 overflow-hidden">
       {/* Hero */}
 
-      <section className="bg-gradient-to-r  from-pink-600 to-purple-600 text-white py-20 text-center px-6 mt-20">
+      <section className="bg-gradient-to-b from-black to-[#1B3C73]  text-white py-26 text-center ">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
           SAP Services & Implementation{" "}
         </h1>
@@ -338,7 +338,7 @@ function SapImplementation() {
               key={index}
               className="relative bg-gradient-to-br from-indigo-50 to-purple-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition"
             >
-              <div className="absolute -top-5 left-6 bg-indigo-600 text-white w-12 h-12 flex items-center justify-center rounded-full font-bold text-lg shadow-lg">
+              <div className="absolute -top-5 left-6 bg-indigo-950 text-white w-12 h-12 flex items-center justify-center rounded-full font-bold text-lg shadow-lg">
                 {index + 1}
               </div>
               <p className="font-semibold text-lg mt-6">{step}</p>
@@ -348,7 +348,7 @@ function SapImplementation() {
       </section>
 
       {/* Benefits */}
-      <section className="py-20 px-6 bg-gradient-to-br from-indigo-600 to-purple-700 text-white">
+      <section className="py-20 px-6 bg-gradient-to-b from-black to-[#1B3C73] text-white">
         <h2 className="text-4xl font-bold text-center mb-16">
           Benefits of SAP Implementation
         </h2>
@@ -475,7 +475,7 @@ function SapImplementation() {
                 key={i}
                 className="group flex items-center gap-4 bg-white border border-gray-100 p-5 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-pointer"
               >
-                <div className="bg-indigo-100 text-indigo-700 p-2 rounded-lg group-hover:bg-indigo-600 group-hover:text-white transition">
+                <div className="bg-indigo-100 text-indigo-900 p-2 rounded-lg group-hover:bg-indigo-900 group-hover:text-white transition">
                   <CheckCircle2 size={20} />
                 </div>
                 <span className="font-medium text-gray-700">{item}</span>
@@ -487,7 +487,7 @@ function SapImplementation() {
       
 
       {/* CTA */}
-      <section className="py-20 px-6 bg-gradient-to-r from-pink-600 to-indigo-700 text-white text-center">
+      <section className="py-20 px-6 bg-gradient-to-b from-black to-[#1B3C73]bg-gradient-to-b from-black to-[#1B3C73] text-white text-center">
         <h2 className="text-4xl font-bold mb-6">
           Ready to Transform Your Enterprise?
         </h2>

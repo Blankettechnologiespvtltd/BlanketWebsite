@@ -72,10 +72,10 @@ const App = () => {
     path: "/consultancy",
     element: <div><Consultancy/></div>,
   },
-  {
-    path: "/case-studies",
-    element: <div><CaseStudies /></div>,
-  },
+  // {
+  //   path: "/case-studies",
+  //   element: <div><CaseStudies /></div>,
+  // },
   {
     path: "/blog",
     element: <div><Blog /></div>,
@@ -190,7 +190,7 @@ const App = () => {
 
   return (
     <>
-    <RouterProvider router={router} />,
+    <RouterProvider router={router} />
     </>
   )
 }

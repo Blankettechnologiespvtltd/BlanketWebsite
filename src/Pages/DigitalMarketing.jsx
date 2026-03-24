@@ -21,7 +21,7 @@ const DigitalMarketing = () => {
   return (
     <div className="bg-gray-50 min-h-screen mt-[6rem]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-pink-600 to-purple-600 text-white py-20 px-6 text-center">
+      <section className="bg-gradient-to-b from-black to-[#2654a5] -mt-24 text-white py-30 px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -39,7 +39,7 @@ const DigitalMarketing = () => {
       </section>
 
       {/* Overview Section */}
-      <section className="max-w-6xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-10">
+      <section className="max-w-6xl mx-auto py-16  px-6 grid md:grid-cols-2 gap-10">
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -49,7 +49,7 @@ const DigitalMarketing = () => {
           <img
             src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1000&q=60"
             alt="Digital Marketing"
-            className="rounded-2xl shadow-lg"
+            className="  h-[16rem]  mt-20 rounded-2xl shadow-lg"
           />
         </motion.div>
 
@@ -61,7 +61,7 @@ const DigitalMarketing = () => {
           className="flex flex-col justify-center"
         >
           <h2 className="text-3xl font-bold mb-4 text-gray-800">
-            Empowering Brands Through Digital Growth 🚀
+            Empowering Brands Through Digital Growth 
           </h2>
           <p className="text-gray-600 mb-6">
             Our digital marketing team specializes in building custom strategies
@@ -247,7 +247,7 @@ const DigitalMarketing = () => {
           <img
             src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=60"
             alt="Marketing Team"
-            className="rounded-2xl shadow-lg"
+            className="h-[18rem] rounded-2xl shadow-lg"
           />
         </motion.div>
       </section>
@@ -260,7 +260,7 @@ const DigitalMarketing = () => {
           transition={{ duration: 0.5 }}
           className="text-3xl font-bold mb-4"
         >
-          Grow Your Brand with Blanket Technologies 🌐
+          Grow Your Brand with Blanket Technologies 
         </motion.h3>
         <p className="text-lg max-w-2xl mx-auto mb-6">
           Take your business to the next level with data-driven digital marketing

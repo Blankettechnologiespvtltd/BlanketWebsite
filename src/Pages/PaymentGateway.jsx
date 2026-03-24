@@ -20,7 +20,7 @@ const PaymentGateway = () => {
   return (
     <div className="bg-gray-50 min-h-screen mt-[5rem]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r  from-pink-600 to-purple-600 text-white py-20 px-6 text-center">
+      <section className="bg-gradient-to-b from-black to-[#1B3C73] -mt-20 text-white py-30 px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ const PaymentGateway = () => {
           <img
             src="https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?auto=format&fit=crop&w=1000&q=60"
             alt="Payment Integration"
-            className="rounded-2xl shadow-lg"
+            className="h-[17rem] mt-13 rounded-2xl shadow-lg"
           />
         </motion.div>
 
@@ -217,7 +217,7 @@ const PaymentGateway = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 viewport={{ once: true }}
-                className=" bg-linear-to-r to-blue-800 via-green-200 to-black py-6 px-4 rounded-xl shadow hover:shadow-lg transition text-lg font-semibold text-gray-800"
+                className=" bg-gradient-to-r from-black to-[#1B3C73] py-6 text-white px-4 rounded-xl shadow hover:shadow-lg transition text-lg font-semibold text-gray-800"
               >
                 {pg}
               </motion.div>
@@ -227,14 +227,14 @@ const PaymentGateway = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-cyan-700 to-indigo-800 text-white py-16 text-center px-6">
+      <section className="bg-gradient-to-b from-black to-[#1B3C73] text-white py-16 text-center px-6">
         <motion.h3
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-3xl font-bold mb-4"
         >
-          Accept Payments Securely With Blanket Technologies 💳
+          Accept Payments Securely With Blanket Technologies 
         </motion.h3>
         <p className="text-lg max-w-2xl mx-auto mb-6">
           Transform your business with fast, secure, and reliable payment

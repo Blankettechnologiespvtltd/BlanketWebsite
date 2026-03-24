@@ -8,23 +8,25 @@ import ContactForm from "../Components/ContactForm";
 const Contact = () => {
   return (
     <div>
-    <section className="bg-gray-50 py-20 mt-[5rem]">
+    <section className="bg-gray-50 py-20 mt-[5rem] ">
       {/* Hero Section */}
+      
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-center px-6 mb-16"
+        // initial={{ opacity: 0, y: 40 }}
+        // whileInView={{ opacity: 1, y: 0 }}
+        // transition={{ duration: 0.6 }}
+        className="text-center px-6 -mt-40 h-[26rem] pt-30 bg-gradient-to-b from-black to-[#1B3C73]"
       >
-        <h1 className="text-5xl font-bold text-blue-700 mb-4">
+        <h1 className="text-5xl font-bold text-white mb-6  ">
           Get in Touch with Blanket Technologies
         </h1>
-        <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+        <p className="text-gray-200 max-w-3xl mx-auto text-lg leading-relaxed pb-10">
           Whether you’re looking for IT consulting, digital transformation, or web development solutions —  
-          our expert team is ready to assist you. At <span className="font-semibold text-blue-600">Blanket Technologies</span>,  
+          our expert team is ready to assist you. At <span className="font-semibold text-white">Blanket Technologies</span>,  
           we pride ourselves on delivering innovation and excellence, Pan India and beyond.
         </p>
       </motion.div>
+   
 
       {/* Contact Info Section */}
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 px-6 mb-20">

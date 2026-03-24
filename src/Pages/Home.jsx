@@ -115,7 +115,7 @@ const Home = () => {
         <Navbar />
 
       {/* HERO */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-black text-white p-7 md:-mt-10">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-r from-black to-[#1B3C73] text-white p-7 ">
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
@@ -141,9 +141,9 @@ const Home = () => {
         ))}
 
         {/* Soft decorative icons (NO continuous JS animation) */}
-        <div className="absolute top-6 left-6 text-cyan-400/20 text-6xl pointer-events-none">
+        {/* <div className="absolute top-6 left-6 text-cyan-400/20 text-6xl pointer-events-none">
           <FaReact />
-        </div>
+        </div> */}
         <div className="absolute bottom-10 right-8 text-blue-400/20 text-5xl pointer-events-none">
           <FaRocket />
         </div>
@@ -159,22 +159,22 @@ const Home = () => {
             scalable & creative IT solutions.
           </p>
 
-          <div className="mb-5">
+          <div className="">
             <PremiumSlideTabs />
           </div>
 
           <button
             onClick={() => navigate("/services")}
-            className="px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full text-white font-semibold shadow-lg transition-transform transform hover:scale-105 cursor-pointer"
+            className="px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full text-white font-semibold shadow-lg transition-transform transform hover:scale-105 cursor-pointer mb-[10rem]"
           >
-            Explore Our Services 🚀
+            Explore Our Services 
           </button>
         </div>
       </section>
 
-      {/* WHY CHOOSE US */}
+      {/* WHY CHOOSE US */} 
       <section className="relative py-24 bg-gray-950 text-white overflow-hidden">
-        <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center px-6">
+        <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16   items-center px-6">
           <div className="space-y-7">
             <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 leading-[1.3] pb-1">
               Why Choose Blanket Technologies?
@@ -251,7 +251,7 @@ const Home = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`grid md:grid-cols-2 gap-12 mb-6 items-center ${
+              className={`grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 items-center ${
                 index % 2 !== 0 ? "md:flex-row-reverse" : ""
               }`}
             >
@@ -262,7 +262,7 @@ const Home = () => {
                     {service.title}
                   </h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed  ">
+                <p className="text-gray-600 leading-relaxed mt-4 ">
                   {service.desc}
                 </p>
                 {/* <button className="px-6 py-2  bg-blue-600 text-white rounded-full hover:opacity-90 transition"> */}
@@ -272,12 +272,12 @@ const Home = () => {
                 </span>{" "}
                 {service.offer}
                 {/* </button> */}
-                <p className="text-green-600 font-medium  mt-5">
+                <p className="text-green-600 font-medium  mt-8">
                   <span className="font-semibold">{service.benefits}</span>{" "}
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 gap-4 h-[19rem] w-[39rem]  p-10">
+              <div className="grid grid-cols-2 gap-2 h-[19rem] w-[39rem]  p-10">
                 {service.images.map((img, i) => (
                   <img
                     key={i}

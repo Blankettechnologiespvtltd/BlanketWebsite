@@ -7,7 +7,7 @@ const EcommerceSolutions = () => {
   return (
     <div className="bg-gray-50 min-h-screen mt-[5rem]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r  from-pink-600 to-purple-600 text-white py-20 px-6 text-center">
+      <section className="bg-gradient-to-b from-black to-[#1B3C73] -mt-20 text-white py-30 px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -106,7 +106,7 @@ const EcommerceSolutions = () => {
               className="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition"
             >
               {phase.icon}
-              <h3 className="text-2xl font-bold text-indigo-700 mb-2">{phase.step}</h3>
+              <h3 className="text-2xl font-bold text-blue-900 mb-2">{phase.step}</h3>
               <h4 className="text-xl font-semibold mb-2">{phase.title}</h4>
               <p className="text-gray-600">{phase.desc}</p>
             </motion.div>
@@ -115,21 +115,21 @@ const EcommerceSolutions = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-indigo-700 to-purple-700 text-white py-16 text-center px-6">
+      <section className=" bg-gradient-to-b from-black to-[#1B3C73] text-white py-16 text-center px-6">
         <motion.h3
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-3xl font-bold mb-4"
         >
-          Transform Your Retail Business with Blanket Technologies 🛍️
+          Transform Your Retail Business with Blanket Technologies 
         </motion.h3>
         <p className="text-lg max-w-2xl mx-auto mb-6">
           From small startups to large enterprises, we empower brands to go digital with modern ecommerce ecosystems. Get a robust, secure, and scalable platform that grows with your business.
         </p>
         <a
           href="/contact"
-          className="inline-block bg-white text-indigo-800 font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-100 transition"
+          className="inline-block bg-white text-blue-950 font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-100 transition"
         >
           Get a Free Ecommerce Consultation
         </a>

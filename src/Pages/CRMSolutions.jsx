@@ -19,14 +19,14 @@ import Footer from "../Components/Footer";
 
 const CRMSolutions = () => {
   return (
-    <div className="bg-gray-50 min-h-screen text-gray-800 mt-[5rem]">
+    <div className="bg-gray-50 min-h-screen text-gray-800 ">
       {/* HERO */}
-      <section className="bg-gradient-to-r from-pink-600 to-blue-600 text-white py-20 px-6 text-center">
+      <section className="bg-gradient-to-b from-black to-[#1B3C73]   text-white py-14 px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-bold mb-4"
+          className="text-4xl md:text-5xl font-bold mb-4 mt-6"
         >
           CRM Systems & Customer Management Solutions
         </motion.h1>
@@ -69,7 +69,7 @@ const CRMSolutions = () => {
           <img
             src="https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1000&q=60"
             alt="crm overview"
-            className="rounded-2xl shadow-lg"
+            className=" h-[18rem] rounded-2xl shadow-lg"
           />
         </motion.div>
 
@@ -235,7 +235,7 @@ const CRMSolutions = () => {
             <img
               src="/Crm1.jpg"
               alt="sales automation"
-              className="rounded-2xl shadow-lg"
+              className=" h-[23rem] rounded-2xl shadow-lg"
             />
           </motion.div>
         </div>
@@ -250,7 +250,7 @@ const CRMSolutions = () => {
             <img
               src="/Crm2.jpg"
               alt="support"
-              className="rounded-2xl shadow-lg"
+              className="h-[23rem] rounded-2xl shadow-lg"
             />
           </motion.div>
 
@@ -341,9 +341,9 @@ const CRMSolutions = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src="/Crm3.jpg"
+              src="/crm3.jpg"
               alt="analytics"
-              className="rounded-2xl shadow-lg"
+              className="h-[17rem] rounded-2xl shadow-lg"
             />
           </motion.div>
         </div>

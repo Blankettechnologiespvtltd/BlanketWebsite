@@ -21,7 +21,7 @@ const WebTesting = () => {
   return (
     <div className="bg-gray-50 min-h-screen mt-[5rem]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r  from-pink-600 to-purple-600 text-white py-20 px-6 text-center">
+      <section className="bg-gradient-to-b from-black to-[#1B3C73] -mt-20 text-white py-30 px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ const WebTesting = () => {
       </section>
 
       {/* Intro Section */}
-      <section className="max-w-6xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-10">
+      <section className="max-w-6xl mx-auto py-12 px-6 grid md:grid-cols-2 gap-10">
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -47,7 +47,7 @@ const WebTesting = () => {
           <img
             src="/cyber2.jpg"
             alt="Web Testing Team"
-            className="rounded-2xl shadow-lg"
+            className="h-[22rem] mt-7 rounded-2xl shadow-lg"
           />
         </motion.div>
 
@@ -241,7 +241,7 @@ const WebTesting = () => {
           <img
             src="cyber1.jpg"
             alt="QA Testing"
-            className="rounded-2xl shadow-lg"
+            className="h-[22rem]   ml-15   rounded-2xl shadow-lg"
           />
         </motion.div>
       </section>
@@ -254,7 +254,7 @@ const WebTesting = () => {
           transition={{ duration: 0.5 }}
           className="text-3xl font-bold mb-4"
         >
-          Deliver Perfection with Blanket Technologies QA Solutions ⚙️
+          Deliver Perfection with Blanket Technologies QA Solutions 
         </motion.h3>
         <p className="text-lg max-w-2xl mx-auto mb-6">
           Let’s make your web application fast, secure, and error-free.  

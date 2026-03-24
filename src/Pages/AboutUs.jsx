@@ -8,7 +8,7 @@ const AboutUs = () => {
     <div className="bg-gray-50 text-gray-800 mt-[5rem]">
       <ScrollProcess />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-pink-700 to-indigo-700 text-white py-20 px-6 text-center">
+      <section className="bg-gradient-to-b from-black to-[#1B3C73] -mt-20 text-white py-34 px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

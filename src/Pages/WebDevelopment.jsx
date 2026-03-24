@@ -7,7 +7,7 @@ const WebDevelopment = () => {
   return (
     <div className="bg-gray-50 text-gray-800 mt-[6em]">
       {/* HERO SECTION */}
-      <section className="bg-gradient-to-r  from-pink-600 to-purple-600 text-white py-24 px-6 text-center">
+      <section className=" bg-gradient-to-b from-[#1B3C73] to-purple-400 -mt-31 text-white py-34 px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -39,7 +39,7 @@ const WebDevelopment = () => {
           <img
             src="/webdev.jpg"
             alt="Corporate Web Design"
-            className="rounded-2xl shadow-lg"
+            className="  h-[24rem] rounded-2xl shadow-lg"
           />
         </motion.div>
 
@@ -48,10 +48,10 @@ const WebDevelopment = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="flex flex-col justify-center"
+          className="flex flex-col justify-center "
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Transforming Ideas into Digital Experiences
+            Transforming Ideas into Digital Experiences 
           </h2>
           <p className="text-gray-600 mb-6">
             Whether you’re an enterprise, startup, or growing brand — we design and
@@ -139,14 +139,14 @@ const WebDevelopment = () => {
       </section>
 
       {/* PAN INDIA CTA */}
-      <section className="bg-blue-700 text-white py-20 text-center px-6">
+      <section className="bg-gradient-to-b from-[#1B3C73] to-purple-400 text-white py-20 text-center px-6">
         <motion.h3
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-4xl font-bold mb-4"
         >
-          Delivering Excellence Across Pan India 🌐
+          Delivering Excellence Across Pan India 
         </motion.h3>
         <p className="max-w-3xl mx-auto text-lg mb-8 opacity-90">
           From Mumbai to Delhi, Bengaluru to Hyderabad — we empower Indian businesses 

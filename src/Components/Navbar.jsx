@@ -171,16 +171,16 @@ const Navbar = () => {
     //     { name: "SAP Support & Managed Services", link: "/SapSupport" },
     //   ],
     // },
-    { title: "Case Studies", link: "/case-studies" },
+    // { title: "Case Studies", link: "/case-studies" },
     { title: "Blog", link: "/blog" },
   ];
 
   return (
-    <nav className="absolute top-0 left-0 w-full  bg-transparent z-100 text-white    ">
+    <nav className="absolute top-5 left-0 w-full  bg-transparent z-100 text-white    ">
       <div className="max-w-[1400px] mx-auto flex justify-between items-center px-6 ">
         {/* Logo */}
         <Link to="/" className="font-bold text-blue-700">
-          <img src="/fix1.png" className="h-[10rem] w-[16rem]" alt="logo" />
+          <img src="/fix1.png" className="h-[3rem] w-[16rem]" alt="logo" />
         </Link>
 
         {/* DESKTOP MENU */}
@@ -197,11 +197,11 @@ const Navbar = () => {
   >
     <div className="flex items-center gap-1 cursor-pointer">
       {item.link ? (
-        <Link to={item.link} className=" hover:text-blue-600">
+        <Link to={item.link} className=" text-white hover:text-pink-600 bg-clip-text text-transparent">
           {item.title}
         </Link>
       ) : (
-        <span className="hover:text-blue-600">{item.title}</span>
+        <span className="hover:text-purple-600">{item.title}</span>
       )}
 
       {item.submenu && (
@@ -234,7 +234,7 @@ const Navbar = () => {
                 <Link
                   to={sub.link}
                   onClick={() => setDesktopDropdown(null)}
-                  className="block px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600"
+                  className="block px-3 py-2 rounded-md hover:bg-blue-50 text-black hover:text-blue-600"
                 >
                   {sub.name}
                 </Link>
