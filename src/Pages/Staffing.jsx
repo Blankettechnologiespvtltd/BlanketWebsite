@@ -250,21 +250,18 @@ const services = [
             </h3>
 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
   {[
-   [
-  "Information Technology",
-  "Financial Services & FinTech",
-  "Pharmaceuticals & Healthcare",
-  "Automotive & Electric Vehicles (EV)",
-  "Renewable Energy",
-  "Energy & Oil",
-  "E-Commerce & Retail",
-  "Telecommunications",
-  "Electronics & Manufacturing",
-  "Media & Entertainment",
-  "Tourism & Hospitality",
-  "FMCG (Fast-Moving Consumer Goods)"
-]
-  
+    "Information Technology",
+    "Financial Services & FinTech",
+    "Pharmaceuticals & Healthcare",
+    "Automotive & Electric Vehicles (EV)",
+    "Renewable Energy",
+    "Energy & Oil",
+    "E-Commerce & Retail",
+    "Telecommunications",
+    "Electronics & Manufacturing",
+    "Media & Entertainment",
+    "Tourism & Hospitality",
+    "FMCG (Fast-Moving Consumer Goods)"
   ].map((item, i) => (
     <div
       key={i}
