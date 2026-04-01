@@ -3,11 +3,11 @@ import Footer from "../Components/Footer";
 
 const GlobalSearch = () => {
   return (
-    <div className="w-full bg-gray-50 text-gray-900 mt-22">
+    <div className="w-full bg-gray-50 text-gray-900 -mt-2">
       
       {/* HERO */}
-      <section className="w-full py-20 bg-gradient-to-r  from-pink-600 to-purple-600 text-white text-center px-6">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">  Global Search — Find Anything Instantly</h1>
+      <section className="w-full py-20 bg-gradient-to-b from-[#1B3C73] to-purple-400 text-white text-center px-6">
+        <h1 className="text-4xl md:text-5xl font-bold mt-14 mb-6">  Global Search - Find Anything Instantly</h1>
         <p className="text-lg md:text-xl max-w-3xl mx-auto opacity-90">
          A powerful universal search that scans every module, document,  
             contact & record — all from a single search bar.

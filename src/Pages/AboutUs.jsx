@@ -1,12 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Footer from "../Components/Footer";
+import ScrollProcess from "../Components/ScrollProgress"
 
 const AboutUs = () => {
   return (
-    <div className="bg-gray-50 text-gray-800 mt-[5rem]">
+    <div className="bg-gray-50 text-gray-800 mt-[4rem]">
+      <ScrollProcess />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-pink-700 to-indigo-700 text-white py-20 px-6 text-center">
+      <section className="bg-gradient-to-b from-[#1B3C73] to-purple-400 -mt-20 text-white py-34 px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -27,236 +29,194 @@ const AboutUs = () => {
       </section>
 
       {/* Introduction */}
-      <section className="max-w-6xl mx-auto py-16 px-6 text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-3xl font-bold mb-4 text-blue-700"
-        >
-          Who We Are
-        </motion.h2>
-        <p className="text-gray-600 max-w-4xl mx-auto text-2xl">
-          Blanket Technologies is a full-stack IT services and consultancy firm
-          providing end-to-end digital solutions to startups, enterprises, and
-          government sectors. From web and mobile app development to cloud,
-          cybersecurity, and digital marketing — we help organizations unlock
-          their full digital potential.
-          <br />
-          <br />
-          With a Pan-India presence and a growing network of international
-          clients, we combine innovation, strategy, and execution to transform
-          businesses into scalable digital ecosystems.
+      {/* WHO WE ARE */}
+<section className="max-w-7xl mx-auto py-10 px-6 text-center">
+  <motion.h2
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    className="text-4xl font-bold mb-6 text-blue-800"
+  >
+    Who We Are
+  </motion.h2>
+
+  <div className="bg-white shadow-xl rounded-3xl p-6 md:p-14 max-w-5xl mx-auto border border-gray-100">
+    <p className="text-gray-700 text-lg leading-relaxed">
+      Blanket Technologies is a full-stack IT services and consultancy firm
+      providing end-to-end digital solutions to startups, enterprises, and
+      government sectors.
+      <br /><br />
+      From web and mobile app development to cloud, cybersecurity, and digital
+      marketing — we help organizations unlock their full digital potential.
+      <br /><br />
+      With a Pan-India presence and growing international clients, we transform
+      businesses into scalable digital ecosystems.
+    </p>
+  </div>
+</section>
+
+{/* MISSION & VISION */}
+<section className="bg-gradient-to-b from-gray-50 to-white py-24">
+  <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+
+    {[{
+      title: "Our Mission",
+      desc: "Empower businesses through innovative digital solutions that simplify processes and drive measurable growth."
+    },{
+      title: "Our Vision",
+      desc: "To become one of India’s most trusted IT consultancies delivering scalable and future-ready solutions."
+    }].map((item, i) => (
+      <motion.div
+        key={i}
+        whileHover={{ y: -8 }}
+        className="relative bg-white p-10 rounded-3xl shadow-lg hover:shadow-2xl transition border"
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-purple-100 opacity-20 rounded-3xl"></div>
+
+        <div className="relative z-10">
+          <h3 className="text-2xl font-bold text-blue-700 mb-4">
+            {item.title}
+          </h3>
+          <p className="text-gray-600 leading-relaxed">
+            {item.desc}
+          </p>
+        </div>
+      </motion.div>
+    ))}
+  </div>
+</section>
+
+{/* CORE VALUES */}
+<section className="max-w-7xl mx-auto py-24 px-6 text-center">
+  <motion.h2
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    className="text-4xl font-bold mb-14 text-blue-800"
+  >
+    Our Core Values
+  </motion.h2>
+
+  <div className="grid md:grid-cols-3 gap-10">
+    {[
+      "Innovation First",
+      "Transparency & Trust",
+      "Client Success",
+      "Execution Excellence",
+      "Team Collaboration",
+      "Continuous Growth",
+    ].map((title, i) => (
+      <motion.div
+        key={i}
+        whileHover={{ y: -10, scale: 1.03 }}
+        className="bg-white p-8 rounded-3xl shadow-md hover:shadow-2xl transition border border-gray-100"
+      >
+        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-700 font-bold mb-4 mx-auto">
+          {i + 1}
+        </div>
+
+        <h3 className="text-xl font-semibold text-blue-700 mb-2">
+          {title}
+        </h3>
+
+        <p className="text-gray-500 text-sm">
+          Delivering consistent value through strong principles and execution.
         </p>
-      </section>
+      </motion.div>
+    ))}
+  </div>
+</section>
 
-      {/* Mission & Vision */}
-      <section className="bg-white py-16">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition"
-          >
-            <h3 className="text-2xl font-bold text-blue-700 mb-3">
-              Our Mission
-            </h3>
-            <p className="text-gray-600">
-              To empower businesses through technology innovation, delivering
-              cutting-edge digital solutions that simplify complex business
-              processes, enhance operational efficiency, and drive measurable
-              results. We aim to be a trusted technology partner for companies
-              seeking long-term digital growth and sustainable success.
-            </p>
-          </motion.div>
+{/* EXPERTISE */}
+<section className="bg-gray-100 py-24">
+  <h2 className="text-4xl font-bold text-center text-blue-800 mb-14">
+    Our Expertise
+  </h2>
 
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition"
-          >
-            <h3 className="text-2xl font-bold text-blue-700 mb-3">
-              Our Vision
-            </h3>
-            <p className="text-gray-600">
-              To become one of India’s most respected IT consultancies by
-              delivering innovative, ethical, and scalable digital solutions.
-              Our vision is to bridge the gap between technology and business,
-              making digital excellence accessible to every organization, big or
-              small.
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Core Values */}
-      <section className="max-w-6xl mx-auto py-16 px-6 text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-3xl font-bold mb-6 text-blue-700"
-        >
-          Our Core Values
-        </motion.h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          {[
-            {
-              title: "Innovation First",
-              desc: "We constantly experiment, adapt, and innovate to build digital products that stand out in the market.",
-            },
-            {
-              title: "Transparency & Trust",
-              desc: "We maintain clear communication, honesty, and integrity in every project and client relationship.",
-            },
-            {
-              title: "Client Success",
-              desc: "Our success is measured by our clients’ growth — we work as their strategic technology partner, not just a vendor.",
-            },
-            {
-              title: "Excellence in Execution",
-              desc: "We combine modern design principles, agile methodology, and robust coding standards for top-quality results.",
-            },
-            {
-              title: "Team Collaboration",
-              desc: "We believe in people, teamwork, and shared success — fostering an environment of learning and growth.",
-            },
-            {
-              title: "Continuous Improvement",
-              desc: "We evolve with technology — upgrading our skills and solutions to stay ahead of market trends.",
-            },
-          ].map((value, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="p-6 bg-white rounded-xl shadow-sm hover:shadow-md"
-            >
-              <h3 className="text-xl font-semibold text-blue-700 mb-2">
-                {value.title}
-              </h3>
-              <p className="text-gray-600">{value.desc}</p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/* Expertise Section */}
-      <section className="bg-gray-100 py-16 text-center">
-        <h2 className="text-3xl font-bold text-blue-700 mb-8">Our Expertise</h2>
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
-          {[
-            {
-              title: "Web & App Development",
-              desc: "Modern, responsive, and scalable websites and mobile apps built using cutting-edge technologies.",
-            },
-            {
-              title: "Digital Marketing & Branding",
-              desc: "Comprehensive online marketing strategies to boost visibility, engagement, and conversions.",
-            },
-            {
-              title: "IT Consulting & Cloud Solutions",
-              desc: "Helping enterprises adopt cloud and automation technologies for improved performance and scalability.",
-            },
-            {
-              title: "Software Integration",
-              desc: "Streamlining your digital ecosystem by integrating ERP, CRM, and third-party platforms seamlessly.",
-            },
-            {
-              title: "Cybersecurity",
-              desc: "Protecting your data and digital assets through secure frameworks and proactive monitoring systems.",
-            },
-            {
-              title: "Technical Support",
-              desc: "24×7 dedicated support and maintenance ensuring business continuity and reliability.",
-            },
-          ].map((service, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="bg-white rounded-xl shadow-sm p-6 hover:shadow-md"
-            >
-              <h3 className="text-xl font-semibold text-blue-700 mb-2">
-                {service.title}
-              </h3>
-              <p className="text-gray-600">{service.desc}</p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-blue-700 text-white py-16 text-center px-6">
-        <h2 className="text-3xl font-bold mb-4">
-          Partner With Blanket Technologies
-        </h2>
-        <p className="max-w-3xl mx-auto mb-6 text-lg">
-          Ready to accelerate your business transformation? Join hands with our
-          IT experts and experience next-level digital innovation, performance,
-          and growth.
+  <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 px-6">
+    {[
+      "Web & App Development",
+      "Digital Marketing",
+      "Cloud & IT Consulting",
+      "Software Integration",
+      "Cybersecurity",
+      "Technical Support",
+    ].map((title, i) => (
+      <motion.div
+        key={i}
+        whileHover={{ scale: 1.05 }}
+        className="bg-white p-8 rounded-3xl shadow-md hover:shadow-2xl transition border"
+      >
+        <h3 className="text-xl font-semibold text-blue-700 mb-3">
+          {title}
+        </h3>
+        <p className="text-gray-500 text-sm">
+          Scalable, secure, and modern solutions tailored for business growth.
         </p>
-        <a
-          href="/contact"
-          className="inline-block bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
-        >
-          Connect With Us
-        </a>
-      </section>
-      {/* Team Section */}
-      <section className="max-w-6xl mx-auto py-16 px-6 text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-3xl font-bold mb-8 text-blue-700"
-        >
-          Meet Our Leadership Team
-        </motion.h2>
-        <p className="text-gray-600 max-w-3xl mx-auto mb-12">
-          The people behind Blanket Technologies are passionate innovators,
-          skilled engineers, and visionary leaders. Together, we strive to
-          deliver excellence, innovation, and long-term value to every client we
-          serve.
-        </p>
+      </motion.div>
+    ))}
+  </div>
+</section>
 
-        <div className="grid md:grid-cols-2 gap-10">
-          {[
-            {
-              name: "Amit Kumar",
-              role: "Founder & CEO",
-              img: "/team1A.jpg",
-            },
-            {
-              name: "Kapil Tamrakar",
-              role: "Business Development Head",
-              img: "/team2K.jpg",
-            },
-          ].map((member, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 flex flex-col items-center"
-            >
-              <img
-                src={member.img}
-                alt={member.name}
-                className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-blue-600"
-              />
-              <h3 className="text-xl font-semibold text-blue-700">
-                {member.name}
-              </h3>
-              <p className="text-gray-600">{member.role}</p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
+{/* CTA */}
+<section className="bg-gradient-to-r from-blue-700 to-indigo-700 text-white py-24 text-center px-6">
+  <h2 className="text-4xl font-bold mb-6">
+    Let’s Build Something Great
+  </h2>
+
+  <p className="max-w-2xl mx-auto mb-10 opacity-90 text-lg">
+    Accelerate your business with cutting-edge digital solutions and expert
+    technology consulting.
+  </p>
+
+  <a
+    href="/contact"
+    className="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold hover:scale-105 transition inline-block shadow-lg"
+  >
+    Get Started
+  </a>
+</section>
+
+{/* TEAM */}
+<section className="max-w-7xl mx-auto py-24 px-6 text-center">
+  <motion.h2
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    className="text-4xl font-bold mb-10 text-blue-800"
+  >
+    Leadership Team
+  </motion.h2>
+
+  <div className="grid md:grid-cols-2 gap-12">
+    {[
+      {
+        name: "Amit Kumar",
+        role: "Founder & CEO",
+        img: "/team1A.jpg",
+      },
+      {
+        name: "Kapil Tamrakar",
+        role: "Business Development Head",
+        img: "/team2K.jpg",
+      },
+    ].map((member, i) => (
+      <motion.div
+        key={i}
+        whileHover={{ scale: 1.05 }}
+        className="bg-white p-10 rounded-3xl shadow-xl hover:shadow-2xl transition border"
+      >
+        <img
+          src={member.img}
+          alt={member.name}
+          className="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-blue-600 object-cover"
+        />
+
+        <h3 className="text-xl font-semibold text-blue-700">
+          {member.name}
+        </h3>
+        <p className="text-gray-500">{member.role}</p>
+      </motion.div>
+    ))}
+  </div>
+</section>
 
       <Footer />
     </div>

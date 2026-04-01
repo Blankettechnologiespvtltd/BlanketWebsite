@@ -7,7 +7,7 @@ const UIUXDesign = () => {
   return (
     <div className="bg-gray-50 min-h-screen mt-[6em]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-pink-600 to-purple-600 text-white py-20 px-6 text-center">
+      <section className="bg-gradient-to-b from-[#1B3C73] to-purple-400 -mt-31 text-white py-34 px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -16,7 +16,7 @@ const UIUXDesign = () => {
         >
           UI/UX Design Services
         </motion.h1>
-        <p className="text-lg max-w-2xl mx-auto opacity-90">
+        <p className="max-w-2xl text-xl mx-auto opacity-90">
           Transforming ideas into meaningful digital experiences.  
           Blanket Technologies crafts stunning, user-friendly interfaces that engage and convert — delivering seamless design solutions across <span className="font-semibold">Pan India</span>.
         </p>
@@ -33,7 +33,7 @@ const UIUXDesign = () => {
           <img
             src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&w=1000&q=60"
             alt="UI UX Design"
-            className="rounded-2xl shadow-lg"
+            className=" h-[26rem] rounded-2xl shadow-lg"
           />
         </motion.div>
 
@@ -100,7 +100,7 @@ const UIUXDesign = () => {
           transition={{ duration: 0.5 }}
           className="text-3xl font-bold mb-4"
         >
-          Designing for Every Pixel, Every Experience ✨
+          Designing for Every Pixel, Every Experience 
         </motion.h3>
         <p className="text-lg max-w-2xl mx-auto mb-6">
           From conceptualization to final prototype — Blanket Technologies offers

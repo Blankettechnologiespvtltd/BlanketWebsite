@@ -5,7 +5,6 @@ import AutoCarousel from "../Components/AutoCarousel";
 
 const Services = () => {
   const services = [
- 
     {
       title: "Web Development",
       subtitle: "Front-End and Back-End",
@@ -59,7 +58,6 @@ const Services = () => {
     // },
   ];
   const counsaltancyServices = [
-    
     {
       title: "RPO Services",
       subtitle: "Technology Advisory",
@@ -112,10 +110,17 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-6 mt-9 pb-0">
-      <h1 className="text-4xl font-bold text-center mb-10">Our Services</h1>
+    <div className="min-h-screen bg-gray-100   mt-9 pb-0">
+      <h1 className="text-4xl font-bold text-center  text-white  pt-46 -mt-25 h-[26rem] bg-blue-950 ">
+        Our Services
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      </h1>
+      <p className="text-xl text-white px-66 leading-relaxed -mt-46 py-4">We provide expert web development, responsive design, 
+        and modern frontend solutions. Our team builds fast,
+         user-friendly websites and scalable applications that help businesses grow    their digital presence.</p>
+
+
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-26 gap-6 max-w-6xl mx-auto">
         {services.map((svc, i) => (
           <div
             key={i}
@@ -137,7 +142,7 @@ const Services = () => {
         Recruitment Services
       </h1>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16"> 
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16">
         {counsaltancyServices.map((svc, i) => (
           <div
             key={i}

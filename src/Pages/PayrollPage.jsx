@@ -26,11 +26,11 @@ function PayrollPage() {
   ];
 
   return (
-    <div className="w-full bg-gray-50 text-gray-800 mt-22">
+    <div className="w-full bg-gray-50 text-gray-800  -mt-2">
       {/* HERO SECTION */}
-       <section className="w-full py-20 bg-gradient-to-r  from-pink-600 to-purple-600 text-white text-center px-6">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4"> Smart & Efficient Payroll Management</h1>
-        <p className="text-lg md:text-xl max-w-3xl mx-auto opacity-90">
+       <section className="w-full py-20 bg-gradient-to-b  from-[#1B3C73] to-purple-400 text-white text-center px-6">
+        <h1 className="text-4xl md:text-5xl font-bold  mt-15 mb-6"> Smart & Efficient Payroll Management</h1>
+        <p className="text-lg md:text-xl max-w-3xl mx-auto opacity-90 mb-10">
           Streamline your payroll operations with automation, compliance, and accuracy—
             giving you more time to focus on growing your business.
         </p>

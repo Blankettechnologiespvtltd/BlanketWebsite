@@ -4,6 +4,8 @@ import ScrollProgress from "../Components/ScrollProgress";
 import { useNavigate } from "react-router";
 import ConsultancySection from "../Components/ConsultancySection";
 import StatsSection from "../Components/StatsSection";
+import Testimonials from "../Components/Testimonials";
+import Navbar from "../Components/Navbar";
 import {
   FaReact,
   FaCode,
@@ -19,6 +21,7 @@ import Carousel from "../Components/AutoCarousel";
 import Footer from "../Components/Footer";
 import PremiumSlideTabs from "../Components/PremiumSlideTabs";
 
+
 const Home = () => {
   const navigate = useNavigate();
 
@@ -33,7 +36,7 @@ const Home = () => {
       desc: "We design and develop high-performance websites with modern technologies to deliver seamless user experiences.",
       offer: " Custom Websites, React/Next.js Apps, eCommerce Solutions ",
       benefits: "Fast, secure, and scalable online presence for your business.",
-      images: ["/web1st.jpg", "/web2nd.jpg"],
+      images: ["/web1st.jpg", "/aws.jpg"],
     },
     {
       icon: <FaBullhorn className="text-green-600 text-4xl" />,
@@ -66,14 +69,14 @@ const Home = () => {
       title: "Web Development",
       subtitle: "Front-End and Back-End",
       desc: "We build responsive, scalable web apps using React, Next.js, and modern tech stacks.",
-      image: "/webdev.jpg",
+      image: "/web.jpg",
       links: "/web-designing",
     },
     {
       title: "Digital Marketing",
       subtitle: "SEO, SEM, and Social Media",
       desc: "Empowering businesses with intelligent systems, automation, and data-driven insights.",
-      image: "/ai.jpg",
+      image: "/digital.jpg",
       links: "/digital-marketing",
     },
     {
@@ -109,9 +112,10 @@ const Home = () => {
   return (
     <div>
       <ScrollProgress />
+        <Navbar />
 
       {/* HERO */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-black text-white p-7 md:mt-20">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-r from-black to-[#1B3C73] text-white p-7 ">
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
@@ -137,15 +141,15 @@ const Home = () => {
         ))}
 
         {/* Soft decorative icons (NO continuous JS animation) */}
-        <div className="absolute top-6 left-6 text-cyan-400/20 text-6xl pointer-events-none">
+        {/* <div className="absolute top-6 left-6 text-cyan-400/20 text-6xl pointer-events-none">
           <FaReact />
-        </div>
+        </div> */}
         <div className="absolute bottom-10 right-8 text-blue-400/20 text-5xl pointer-events-none">
           <FaRocket />
         </div>
 
         {/* Content */}
-        <div className="relative z-10 text-center  ">
+        <div className="relative z-10 text-center mt-[20rem] ">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text ">
             Building The Future With Technology & Innovation
           </h1>
@@ -155,22 +159,22 @@ const Home = () => {
             scalable & creative IT solutions.
           </p>
 
-          <div className="mb-5">
+          <div className="">
             <PremiumSlideTabs />
           </div>
 
           <button
             onClick={() => navigate("/services")}
-            className="px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full text-white font-semibold shadow-lg transition-transform transform hover:scale-105 cursor-pointer"
+            className="px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full text-white font-semibold shadow-lg transition-transform transform hover:scale-105 cursor-pointer mb-[20rem]"
           >
-            Explore Our Services 🚀
+            Explore Our Services 
           </button>
         </div>
       </section>
 
-      {/* WHY CHOOSE US */}
+      {/* WHY CHOOSE US */} 
       <section className="relative py-24 bg-gray-950 text-white overflow-hidden">
-        <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center px-6">
+        <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16   items-center px-6">
           <div className="space-y-7">
             <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 leading-[1.3] pb-1">
               Why Choose Blanket Technologies?
@@ -247,18 +251,18 @@ const Home = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`grid md:grid-cols-2 gap-12 mb-20 items-center ${
+              className={`grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 items-center ${
                 index % 2 !== 0 ? "md:flex-row-reverse" : ""
               }`}
             >
-              <div className="space-y-4">
+              <div className="space-y-4">      
                 <div className="flex items-center  gap-4">
                   {service.icon}
                   <h3 className="text-2xl font-semibold text-gray-800">
                     {service.title}
                   </h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed  ">
+                <p className="text-gray-600 leading-relaxed mt-4 ">
                   {service.desc}
                 </p>
                 {/* <button className="px-6 py-2  bg-blue-600 text-white rounded-full hover:opacity-90 transition"> */}
@@ -268,18 +272,19 @@ const Home = () => {
                 </span>{" "}
                 {service.offer}
                 {/* </button> */}
-                <p className="text-green-600 font-medium  mt-5">
+                <p className="text-green-600 font-medium  mt-8">
                   <span className="font-semibold">{service.benefits}</span>{" "}
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-2 h-[19rem] w-[39rem]  p-10">
                 {service.images.map((img, i) => (
                   <img
                     key={i}
                     src={img}
                     alt={service.title}
-                    className="rounded-2xl shadow-xl h-56 w-full object-cover transition-transform duration-300 hover:-translate-y-2"
+                    className="rounded-2xl shadow-xl h-[17rem]  w-full object-cover transition-transform duration-300 hover:-translate-y-2"
+                    
                   />
                 ))}
               </div>
@@ -287,10 +292,11 @@ const Home = () => {
           ))}
         </div>
       </section>
+      <Testimonials />
 
       {/* EXPERTISE GRID */}
-      <section className="py-7 bg-gray-50 text-center">
-        <div className="max-w-6xl mx-auto px-6 mb-0">
+      {/* <section className="py-7 bg-gray-50 text-center  ">
+        <div className="max-w-6xl mx-auto px-6 mb-0 ">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
             Our <span className="text-blue-600">Expertise</span>, Your Success
           </h2>
@@ -309,8 +315,9 @@ const Home = () => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="h-48 w-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="h-44 w-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
+             
 
                 <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center items-center text-white px-4">
                   <p className="text-sm mb-3">{item.desc}</p>
@@ -346,7 +353,7 @@ const Home = () => {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* TRUST / STATS */}
       <section className="relative overflow-hidden py-10 bg-linear-to-br from-gray-50 via-white to-blue-50">
@@ -364,6 +371,7 @@ const Home = () => {
 
       <Carousel />
       <ConsultancySection />
+    
       <Footer />
     </div>
   );

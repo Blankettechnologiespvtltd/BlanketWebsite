@@ -13,7 +13,7 @@ const Blog = () => {
       date: "October 21, 2025",
       category: "IT Strategy",
       icon: <BarChart3 className="text-blue-600" size={22} />,
-      image: "/blog1.jpg",
+      image: "/blog-.jpg",
       content:
         "As industries continue to evolve, the demand for IT-driven business transformation is skyrocketing. From automation and AI to advanced analytics, companies are rethinking their operations with a focus on digital acceleration. Blanket Technologies helps businesses reimagine processes, implement scalable systems, and leverage data to gain a competitive advantage across markets. Learn how the next wave of IT consultancy is shaping business growth globally.",
     },
@@ -24,7 +24,7 @@ const Blog = () => {
       date: "September 17, 2025",
       category: "Design Thinking",
       icon: <PenTool className="text-pink-600" size={22} />,
-      image: "/blog2.jpg",
+      image: "/blog_.jpg",
       content:
         "UI/UX design is no longer just about aesthetics—it’s the bridge between user expectations and business objectives. With 94% of users forming first impressions based on design, a great digital experience determines retention and trust. Blanket Technologies’ design team focuses on user psychology, micro-interactions, and accessibility to craft seamless, high-conversion experiences for enterprise and startup clients across India.",
     },
@@ -35,7 +35,7 @@ const Blog = () => {
       date: "August 5, 2025",
       category: "AI & Automation",
       icon: <Laptop className="text-green-600" size={22} />,
-      image: "/blog3.jpg",
+      image: "/blog--.jpg",
       content:
         "AI is redefining the future of web development. From predictive user interfaces to AI-based code assistance, automation is enabling faster delivery cycles, better personalization, and smarter analytics. Blanket Technologies integrates machine learning APIs into modern web solutions, helping businesses reduce costs, enhance engagement, and deploy intelligent websites that evolve with every user interaction.",
     },
@@ -46,7 +46,7 @@ const Blog = () => {
       date: "July 11, 2025",
       category: "Digital Marketing",
       icon: <Megaphone className="text-orange-600" size={22} />,
-      image: "/marketing1.jpg",
+      image: "/blog---.jpg",
       content:
         "The digital marketing landscape has shifted dramatically with the rise of voice search, influencer partnerships, and AI-driven campaign targeting. Blanket Technologies’ digital marketing experts blend SEO, PPC, and advanced analytics to create impactful strategies that deliver measurable ROI for clients. Learn how our team achieves 10x visibility growth through performance-focused marketing frameworks.",
     },
@@ -56,7 +56,7 @@ const Blog = () => {
     <div className="mt-[5rem]">
     <section className="bg-gray-50 text-gray-800">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-800 to-cyan-600 text-white py-24 px-6 text-center">
+      <div className=" bg-gradient-to-b from-[#1B3C73] to-purple-400 -mt-20 text-white py-34 px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -86,7 +86,7 @@ const Blog = () => {
           className="bg-white rounded-2xl shadow-lg overflow-hidden mb-16"
         >
           <img
-            src="/main.jpg"
+            src="/_blog_.png"
             alt="Featured Blog"
             className="w-full h-[24rem] object-cover"
           />

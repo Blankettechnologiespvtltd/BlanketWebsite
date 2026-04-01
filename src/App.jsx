@@ -8,6 +8,8 @@ import Home from "./Pages/Home"
 import Services from "./Pages/Services"
 import Careers from "./Pages/Careers"
 import Contact from "./Pages/Contact"
+import Testimonials from "./Components/Testimonials"
+
 import AnimatedHero from './AnimatedHero';
 import WebDevelopment from './Pages/WebDevelopment';
 import UIUXDesign from './Pages/UIUXDesign';
@@ -29,14 +31,15 @@ import RPO from './Pages/RPO';
 import PayrollPage from './Pages/PayrollPage';
 import GlobalSearch from './Pages/GlobalSearch';
 import ExecutiveSearch from './Pages/ExecutiveSearch';
-import ContractStaffing from './Pages/ContractStaffing';
+// import ContractStaffing from './Pages/ContractStaffing';
 import PermanentHiring from './Pages/PermanentHiring';
 import ProjectBasedHiring from './Pages/ProjectBasedHiring';
 import PrivacyPolicyPage from './Components/privacypolicy';
 import TermsConditionsPage from './Components/TermsConditionsPage';
 import SapImplementation from "./Pages/SapImplementation";
 import Footer from './Components/Footer';
-
+import Staffing from './Pages/Staffing';
+import Clients from './Pages/Clients';
 
 
 
@@ -71,10 +74,10 @@ const App = () => {
     path: "/consultancy",
     element: <div><Consultancy/></div>,
   },
-  {
-    path: "/case-studies",
-    element: <div><CaseStudies /></div>,
-  },
+  // {
+  //   path: "/case-studies",
+  //   element: <div><CaseStudies /></div>,
+  // },
   {
     path: "/blog",
     element: <div><Blog /></div>,
@@ -149,8 +152,8 @@ const App = () => {
     element: <div><ExecutiveSearch /></div>,
   },
   {
-    path: "/ContractStaffing",
-    element: <div><ContractStaffing /></div>,
+    path: "/Staffing",
+    element: <div><Staffing /></div>,
   },
    {
     path: "/PermanentHiring",
@@ -173,6 +176,15 @@ const App = () => {
     path: "/Sap",
     element: <div><SapImplementation /> <Footer /> </div>,
   },
+   {
+    path: "/testimonial",
+    element: <div><Testimonials /> <Footer /> </div>,
+  },
+   {
+    path: "/Clients",
+    element: <Clients />,
+  },
+  
   
   
     ],
@@ -185,7 +197,7 @@ const App = () => {
 
   return (
     <>
-    <RouterProvider router={router} />,
+    <RouterProvider router={router} />
     </>
   )
 }

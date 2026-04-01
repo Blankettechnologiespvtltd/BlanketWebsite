@@ -18,7 +18,7 @@ const AppDevelopment = () => {
   return (
     <div className="bg-gray-50 min-h-screen mt-[6rem]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-pink-600 to-purple-600 text-white py-20 px-6 text-center">
+      <section className="bg-gradient-to-b from-[#1B3C73] to-purple-400 text-white -mt-29 py-34 px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -47,7 +47,7 @@ const AppDevelopment = () => {
           <img
             src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1000&q=60"
             alt="App Development"
-            className="rounded-2xl shadow-lg"
+            className=" h-[26rem] rounded-2xl shadow-lg"
           />
         </motion.div>
 
@@ -59,7 +59,7 @@ const AppDevelopment = () => {
           className="flex flex-col justify-center"
         >
           <h2 className="text-3xl font-bold mb-4 text-gray-800">
-            Building Apps That Drive Growth 🚀
+            Building Apps That Drive Growth 
           </h2>
           <p className="text-gray-600 mb-6">
             We specialize in end-to-end app development services — from concept
@@ -227,7 +227,7 @@ const AppDevelopment = () => {
           <img
             src="https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?auto=format&fit=crop&w=1000&q=60"
             alt="App Team"
-            className="rounded-2xl shadow-lg"
+            className=" h-[18rem] rounded-2xl shadow-lg"
           />
         </motion.div>
       </section>
@@ -240,7 +240,7 @@ const AppDevelopment = () => {
           transition={{ duration: 0.5 }}
           className="text-3xl font-bold mb-4"
         >
-          Let’s Build the Future — One App at a Time 📱
+          Let’s Build the Future — One App at a Time 
         </motion.h3>
         <p className="text-lg max-w-2xl mx-auto mb-6">
           Join hands with Blanket Technologies to develop modern, secure, and

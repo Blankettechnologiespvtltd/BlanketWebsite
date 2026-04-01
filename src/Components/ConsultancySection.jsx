@@ -99,7 +99,7 @@ const ConsultancySection = () => {
   href="tel:+919876543210"
   className="bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 shadow-lg inline-flex items-center gap-2"
 >
-  📞 Get Free Consultation
+   Get Free Consultation
 </a>
 
       </motion.div>
