@@ -20,7 +20,7 @@ const WebDevelopment = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.7 }}
-          className="max-w-3xl mx-auto text-lg md:text-xl opacity-90"
+          className="max-w-3xl mx-auto text-lg md:text-xl text-white/90 opacity-90"
         >
           At <strong>Blanket Technologies</strong>, we craft scalable, high-performance
           web solutions that empower your business across <span className="font-semibold">Pan India</span>.  
@@ -29,7 +29,7 @@ const WebDevelopment = () => {
       </section>
 
       {/* ABOUT SECTION */}
-      <section className="max-w-6xl mx-auto py-20 px-6 grid md:grid-cols-2 gap-12  ">
+      <section className="max-w-6xl mx-auto py-20 px-6 grid md:grid-cols-2   gap-12  ">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}

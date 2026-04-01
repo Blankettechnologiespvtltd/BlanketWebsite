@@ -1,36 +1,35 @@
+
 import React from "react";
 import Footer from "../Components/Footer";
 
 const RPO = () => {
   return (
-    <div className="pt-28  px-6 md:px-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto">
+    <div className="bg-gray-50">
 
-        {/* Main Heading */}
-        <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400 leading-[1.2] inline-block">
-          Recruitment Process Outsourcing (RPO)
-        </h1>
+      {/* Hero */}
+      <section className="bg-gradient-to-b from-[#1B3C73] to-purple-400 text-white text-center py-24 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+            Recruitment Process Outsourcing
+          </h1>
 
-        <p className="text-gray-600 mt-5 text-lg leading-relaxed">
-          Blanket Technologies offers professional RPO (Recruitment Process Outsourcing) 
-          solutions to help organizations hire top-quality talent faster, at lower cost, 
-          and with complete transparency. Our expert recruiters act as an extended part of 
-          your HR department — ensuring you get the right candidates, streamlined hiring 
-          processes, and a fully optimized recruitment ecosystem.  
-          <br /><br />
-          Whether you're a startup building your first team or an enterprise scaling rapidly, 
-          our RPO model adapts to your hiring goals, job role complexity, and industry needs. 
-          From sourcing and screening to onboarding, we convert your hiring challenges into 
-          a structured, data-driven, and efficient system.
-        </p>
+          <p className="text-lg leading-relaxed text-blue-100">
+            RPO solutions to help organizations hire top-quality talent faster,
+            reduce costs, and streamline hiring with a structured system.
+          </p>
+        </div>
+      </section>
 
-        {/* Why Choose RPO */}
-        <div className="mt-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+      {/* Main Container */}
+      <div className="max-w-6xl mx-auto px-6 py-16 space-y-16">
+
+        {/* Why Choose */}
+        <section>
+          <h2 className="text-3xl font-bold text-gray-800 text-center mb-10">
             Why Choose Our RPO Services?
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-6 mt-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {[
               "Up to 40% Faster Hiring",
               "Reduced Recruitment Costs",
@@ -44,173 +43,186 @@ const RPO = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition"
+                className="p-6 bg-white rounded-2xl shadow hover:shadow-lg text-center transition"
               >
-                <h3 className="font-semibold text-gray-800 text-lg">{item}</h3>
+                <h3 className="font-semibold text-gray-800">{item}</h3>
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
-        {/* RPO Models */}
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        {/* Models */}
+        <section>
+          <h2 className="text-3xl font-bold text-gray-800 text-center mb-10">
             Our RPO Engagement Models
           </h2>
 
           <div className="space-y-5">
             {[
               {
-                title: "Full-Cycle ",
-                desc: "We manage the complete hiring operation including sourcing, screening, interviews, selection, and onboarding."
+                title: "Full-Cycle",
+                desc: "Complete hiring lifecycle from sourcing to onboarding.",
               },
               {
-                title: "Project-Based ",
-                desc: "Ideal for short-term or urgent hiring needs such as seasonal hiring, expansions, or new project launches."
+                title: "Project-Based",
+                desc: "Short-term hiring for expansions or urgent needs.",
               },
               {
-                title: "On-Demand ",
-                desc: "Flexible hiring support whenever you need recruitment assistance. Scale up or down as needed."
+                title: "On-Demand",
+                desc: "Flexible recruitment support as needed.",
               },
               {
-                title: "Hybrid ",
-                desc: "Combine your in-house HR team with our expert recruiters to achieve maximum hiring efficiency."
-              }
+                title: "Hybrid",
+                desc: "Combine in-house HR with expert recruiters.",
+              },
             ].map((item, i) => (
-              <div key={i} className="p-6 bg-white rounded-xl shadow border-l-4 border-cyan-400 hover:shadow-md transition">
-                <h3 className="font-bold text-gray-800 text-xl">{item.title}</h3>
+              <div
+                key={i}
+                className="p-6 bg-white rounded-xl shadow border-l-4 border-indigo-500 hover:shadow-md transition"
+              >
+                <h3 className="font-bold text-gray-800 text-lg">
+                  {item.title}
+                </h3>
                 <p className="text-gray-600 mt-2">{item.desc}</p>
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
         {/* Process */}
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        <section>
+          <h2 className="text-3xl font-bold text-gray-800 text-center mb-10">
             Our RPO Hiring Process
           </h2>
 
           <div className="space-y-5">
             {[
-              "Understanding Your Hiring Requirements & Company Culture",
-              "Sourcing Talent Through Job Portals, LinkedIn, Social Media & Internal Database",
-              "AI-Based Screening, Candidate Shortlisting & Skill Evaluation",
-              "Scheduling Interviews With HR & Technical Teams",
-              "Final Selection, Salary Negotiation & Offer Management",
-              "Smooth Onboarding, Background Verification & Joining Follow-up",
+              "Understanding requirements & company culture",
+              "Sourcing via job portals & LinkedIn",
+              "AI-based screening & shortlisting",
+              "Interview scheduling & coordination",
+              "Offer & negotiation management",
+              "Onboarding & follow-up",
             ].map((step, i) => (
               <div
                 key={i}
-                className="p-5 bg-white rounded-xl shadow hover:shadow-md transition border-l-4 border-blue-400"
+                className="p-5 bg-white rounded-xl shadow border-l-4 border-indigo-400"
               >
-                <span className="font-semibold text-gray-800">{step}</span>
+                <span className="text-gray-800">{step}</span>
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
         {/* Industries */}
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        <section>
+          <h2 className="text-3xl font-bold text-gray-800 text-center mb-10">
             Industries We Serve
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              "IT & Software Development",
+              "IT & Software",
               "Ecommerce & Retail",
               "Banking & Finance",
-              "Healthcare & Pharma",
+              "Healthcare",
               "Manufacturing",
-              "Telecommunications",
-              "Startups & Tech Companies",
-              "EdTech & Learning Platforms",
-              "Logistics & Supply Chain",
+              "Telecom",
+              "Startups",
+              "EdTech",
+              "Logistics",
             ].map((item, i) => (
               <div
                 key={i}
-                className="p-6 bg-white rounded-xl shadow hover:shadow-lg transition"
+                className="p-6 bg-white rounded-xl shadow hover:shadow-lg text-center"
               >
                 <h3 className="font-semibold text-gray-800">{item}</h3>
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
         {/* Tools */}
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            Technology & Tools We Use
+        <section>
+          <h2 className="text-3xl font-bold text-gray-800 text-center mb-10">
+            Technology & Tools
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              "Applicant Tracking Systems (ATS)",
-              "AI-Based Resume Screening Tools",
-              "HRM & CRM Platforms",
-              "Payroll & HR Automation Tools",
-              "Video Interview Platforms",
-              "Skill Assessment & Testing Tools",
+              "ATS Systems",
+              "AI Resume Screening",
+              "HRM & CRM Tools",
+              "Payroll Automation",
+              "Video Interviews",
+              "Skill Testing Tools",
             ].map((tool, i) => (
-              <div key={i} className="p-4 bg-white rounded-xl shadow hover:shadow-md transition">
-                <p className="font-semibold text-gray-700">{tool}</p>
+              <div
+                key={i}
+                className="p-5 bg-white rounded-xl shadow text-center"
+              >
+                <p className="text-gray-700 font-medium">{tool}</p>
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
         {/* FAQ */}
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            Frequently Asked Questions (FAQ)
+        <section>
+          <h2 className="text-3xl font-bold text-gray-800 text-center mb-10">
+            FAQ
           </h2>
 
-          <div className="space-y-4">
+          <div className="space-y-4 max-w-4xl mx-auto">
             {[
               {
-                q: "What is RPO and how does it work?",
-                a: "RPO is a service where a company outsources its recruitment operations to a specialized agency like us. We manage sourcing, interviews, onboarding, and more."
+                q: "What is RPO?",
+                a: "Outsourcing recruitment to experts for faster hiring.",
               },
               {
-                q: "Is RPO only for large companies?",
-                a: "No, startups and mid-size businesses use RPO to hire faster without building a large HR team."
+                q: "Who can use RPO?",
+                a: "Startups, SMEs, and enterprises.",
               },
               {
-                q: "How soon can you start hiring?",
-                a: "Our team can begin sourcing candidates within 24–48 hours after requirement onboarding."
+                q: "How fast can you start?",
+                a: "Within 24–48 hours.",
               },
               {
-                q: "Is RPO cost-effective?",
-                a: "Yes! Companies save 30–50% on hiring costs using RPO compared to traditional recruitment."
-              }
+                q: "Is it cost-effective?",
+                a: "Yes, saves up to 50% hiring cost.",
+              },
             ].map((item, i) => (
-              <div key={i} className="p-5 bg-white rounded-xl shadow border-l-4 border-blue-500">
-                <h4 className="font-semibold text-lg text-gray-800">{item.q}</h4>
+              <div
+                key={i}
+                className="p-5 bg-white rounded-xl shadow border-l-4 border-indigo-500"
+              >
+                <h4 className="font-semibold text-gray-800">{item.q}</h4>
                 <p className="text-gray-600 mt-2">{item.a}</p>
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
         {/* CTA */}
-        <div className="mt-20 text-center py-8">
+        <section className="text-center">
           <h3 className="text-3xl font-bold text-gray-800 mb-4">
             Ready to Build a High-Performance Workforce?
           </h3>
-          <p className="text-gray-600 mb-6 text-lg">
-            Get expert recruitment support and hire top-quality talent faster, smarter, and cost-effectively.
+
+          <p className="text-gray-600 mb-6">
+            Hire faster, smarter, and cost-effectively.
           </p>
 
           <a
             href="/contact"
-            className="inline-block bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-10 py-3 rounded-full font-semibold shadow-md hover:shadow-lg hover:from-blue-700 hover:to-cyan-600 transition"
+            className="inline-block bg-gradient-to-r from-[#1B3C73] to-indigo-700 text-white px-10 py-3 rounded-full font-semibold shadow-md hover:shadow-lg transition"
           >
             Get RPO Consultation
           </a>
-        </div>
+        </section>
 
       </div>
+
       <Footer />
     </div>
   );

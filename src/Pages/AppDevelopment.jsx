@@ -18,7 +18,7 @@ const AppDevelopment = () => {
   return (
     <div className="bg-gray-50 min-h-screen mt-[6rem]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-black to-[#1B3C73] text-white -mt-29 py-34 px-6 text-center">
+      <section className="bg-gradient-to-b from-[#1B3C73] to-purple-400 text-white -mt-29 py-34 px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}

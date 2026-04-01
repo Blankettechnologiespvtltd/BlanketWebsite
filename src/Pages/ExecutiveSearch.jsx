@@ -3,11 +3,11 @@ import Footer from "../Components/Footer";
 
 const ExecutiveSearch = () => {
   return (
-    <div className="w-full bg-gray-50 text-gray-800 mt-22">
+    <div className="w-full bg-gray-50 text-gray-800 -mt-2">
 
-      <section className="w-full py-20 bg-gradient-to-r  from-pink-600 to-purple-600 text-white text-center px-6">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Executive Search Services</h1>
-        <p className="text-lg md:text-xl max-w-3xl mx-auto opacity-90">
+      <section className="w-full py-20 bg-gradient-to-b from-[#1B3C73] to-purple-400   text-white text-center px-6">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-10">Executive Search Services</h1>
+        <p className="text-lg md:text-xl max-w-3xl mx-auto opacity-90 mb-10">
           Finding the right leadership is crucial for business success. We help you identify, assess, and recruit high-impact leaders who drive organizational growth.
         </p>
       </section>

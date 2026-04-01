@@ -20,7 +20,7 @@ const PaymentGateway = () => {
   return (
     <div className="bg-gray-50 min-h-screen mt-[5rem]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-black to-[#1B3C73] -mt-20 text-white py-30 px-6 text-center">
+      <section className="bg-gradient-to-b from-[#1B3C73] to-purple-400 -mt-20 text-white py-30 px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -72,19 +72,19 @@ const PaymentGateway = () => {
           </p>
           <ul className="space-y-3 text-gray-700">
             <li className="flex items-center">
-              <CheckCircle className="text-cyan-700 mr-2" /> Seamless multi-platform
+              <CheckCircle className="text-blue-700 mr-2" /> Seamless multi-platform
               integration (Web & Mobile)
             </li>
             <li className="flex items-center">
-              <CheckCircle className="text-cyan-700 mr-2" /> PCI-DSS Compliant &
+              <CheckCircle className="text-blue-700 mr-2" /> PCI-DSS Compliant &
               100% Secure
             </li>
             <li className="flex items-center">
-              <CheckCircle className="text-cyan-700 mr-2" /> Support for global
+              <CheckCircle className="text-blue-700 mr-2" /> Support for global
               currencies & payment modes
             </li>
             <li className="flex items-center">
-              <CheckCircle className="text-cyan-700 mr-2" /> Real-time reporting
+              <CheckCircle className="text-blue-700 mr-2" /> Real-time reporting
               & transaction analytics
             </li>
           </ul>
@@ -99,32 +99,32 @@ const PaymentGateway = () => {
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[
             {
-              icon: <ShieldCheck className="w-10 h-10 text-cyan-700 mx-auto mb-3" />,
+              icon: <ShieldCheck className="w-10 h-10 text-blue-700 mx-auto mb-3" />,
               title: "Advanced Security",
               desc: "End-to-end encryption, tokenization, and SSL layers to protect sensitive user data from fraud and unauthorized access.",
             },
             {
-              icon: <CreditCard className="w-10 h-10 text-cyan-700 mx-auto mb-3" />,
+              icon: <CreditCard className="w-10 h-10 text-blue-700 mx-auto mb-3" />,
               title: "Multi-Mode Payments",
               desc: "Accept payments via UPI, debit/credit cards, wallets, and bank transfers with instant confirmations.",
             },
             {
-              icon: <BarChart3 className="w-10 h-10 text-cyan-700 mx-auto mb-3" />,
+              icon: <BarChart3 className="w-10 h-10 text-blue-700 mx-auto mb-3" />,
               title: "Real-Time Analytics",
               desc: "Get instant transaction reports, refund summaries, and performance dashboards through your admin panel.",
             },
             {
-              icon: <Cpu className="w-10 h-10 text-cyan-700 mx-auto mb-3" />,
+              icon: <Cpu className="w-10 h-10 text-blue-700 mx-auto mb-3" />,
               title: "API & SDK Integration",
               desc: "Flexible APIs and mobile SDKs that easily integrate with your existing platforms and tech stack.",
             },
             {
-              icon: <Smartphone className="w-10 h-10 text-cyan-700 mx-auto mb-3" />,
+              icon: <Smartphone className="w-10 h-10 text-blue-700 mx-auto mb-3" />,
               title: "Mobile Optimized Checkout",
               desc: "Deliver a frictionless experience across devices with optimized mobile payment interfaces.",
             },
             {
-              icon: <Lock className="w-10 h-10 text-cyan-700 mx-auto mb-3" />,
+              icon: <Lock className="w-10 h-10 text-blue-700 mx-auto mb-3" />,
               title: "Fraud Detection System",
               desc: "AI-powered fraud analysis and pattern detection to flag suspicious transactions instantly.",
             },
@@ -156,31 +156,31 @@ const PaymentGateway = () => {
               step: "01",
               title: "Requirement Gathering",
               desc: "We assess your platform, transaction model, and compliance needs.",
-              icon: <Layers className="mx-auto text-cyan-700 w-10 h-10 mb-3" />,
+              icon: <Layers className="mx-auto text-blue-700 w-10 h-10 mb-3" />,
             },
             {
               step: "02",
               title: "Gateway Selection",
               desc: "Based on your needs, we recommend the most suitable payment gateway (Razorpay, Stripe, PayU, etc.).",
-              icon: <Settings className="mx-auto text-cyan-700 w-10 h-10 mb-3" />,
+              icon: <Settings className="mx-auto text-blue-700 w-10 h-10 mb-3" />,
             },
             {
               step: "03",
               title: "Integration & Customization",
               desc: "We integrate the API and customize checkout experiences for smooth flow.",
-              icon: <Cpu className="mx-auto text-cyan-700 w-10 h-10 mb-3" />,
+              icon: <Cpu className="mx-auto text-blue-700 w-10 h-10 mb-3" />,
             },
             {
               step: "04",
               title: "Testing & Security Validation",
               desc: "We perform sandbox testing and PCI compliance checks for safety.",
-              icon: <ShieldCheck className="mx-auto text-cyan-700 w-10 h-10 mb-3" />,
+              icon: <ShieldCheck className="mx-auto text-blue-700 w-10 h-10 mb-3" />,
             },
             {
               step: "05",
               title: "Go Live & Monitoring",
               desc: "Once deployed, we continuously monitor and optimize payment performance.",
-              icon: <Rocket className="mx-auto text-cyan-700 w-10 h-10 mb-3" />,
+              icon: <Rocket className="mx-auto text-blue-700 w-10 h-10 mb-3" />,
             },
           ].map((phase, i) => (
             <motion.div
@@ -192,7 +192,7 @@ const PaymentGateway = () => {
               className="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition"
             >
               {phase.icon}
-              <h3 className="text-2xl font-bold text-cyan-700 mb-2">{phase.step}</h3>
+              <h3 className="text-2xl font-bold text-blue-700 mb-2">{phase.step}</h3>
               <h4 className="text-xl font-semibold mb-2">{phase.title}</h4>
               <p className="text-gray-600">{phase.desc}</p>
             </motion.div>
@@ -208,7 +208,7 @@ const PaymentGateway = () => {
         <p className="text-gray-600 max-w-3xl mx-auto mb-10">
           We integrate all major Indian and international gateways with seamless API compatibility and security protocols.
         </p>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 ">
           {["Razorpay", "Paytm", "PayU", "Stripe", "CCAvenue", "Paypal"].map(
             (pg, i) => (
               <motion.div
@@ -217,7 +217,7 @@ const PaymentGateway = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 viewport={{ once: true }}
-                className=" bg-gradient-to-r from-black to-[#1B3C73] py-6 text-white px-4 rounded-xl shadow hover:shadow-lg transition text-lg font-semibold text-gray-800"
+                className=" bg-blue-700 py-6 text-white px-4 rounded-xl shadow hover:shadow-lg transition text-lg font-semibold text-gray-800"
               >
                 {pg}
               </motion.div>
@@ -227,7 +227,7 @@ const PaymentGateway = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-b from-black to-[#1B3C73] text-white py-16 text-center px-6">
+      <section className="bg-gradient-to-r from-blue-700 to-indigo-700 text-white py-16 text-center px-6">
         <motion.h3
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

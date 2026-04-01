@@ -7,7 +7,7 @@ const UIUXDesign = () => {
   return (
     <div className="bg-gray-50 min-h-screen mt-[6em]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-blue-950 to-[#436eb8] -mt-24 text-white py-34 px-6 text-center">
+      <section className="bg-gradient-to-b from-[#1B3C73] to-purple-400 -mt-31 text-white py-34 px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -16,7 +16,7 @@ const UIUXDesign = () => {
         >
           UI/UX Design Services
         </motion.h1>
-        <p className="text-lg max-w-2xl mx-auto opacity-90">
+        <p className="max-w-2xl text-xl mx-auto opacity-90">
           Transforming ideas into meaningful digital experiences.  
           Blanket Technologies crafts stunning, user-friendly interfaces that engage and convert — delivering seamless design solutions across <span className="font-semibold">Pan India</span>.
         </p>

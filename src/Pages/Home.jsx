@@ -165,7 +165,7 @@ const Home = () => {
 
           <button
             onClick={() => navigate("/services")}
-            className="px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full text-white font-semibold shadow-lg transition-transform transform hover:scale-105 cursor-pointer mb-[10rem]"
+            className="px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full text-white font-semibold shadow-lg transition-transform transform hover:scale-105 cursor-pointer mb-[20rem]"
           >
             Explore Our Services 
           </button>

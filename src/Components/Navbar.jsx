@@ -109,7 +109,7 @@ const Navbar = () => {
     {
       title: " Our Services",
       submenu: [
-               { name: "Staffing", link: "/staffing" },
+               { name: "Staffing Soltions", link: "/Staffing" },
         { name: "Web Designing", link: "/web-designing" },
         { name: "UI/UX Designing", link: "/ui-ux-designing" },
         { name: "App Development", link: "/app-development" },
@@ -133,7 +133,7 @@ const Navbar = () => {
       title: "  Products",
       submenu: [
         { name: "Ecommerce Solutions", link: "/ecommerce" },
-        { name: "CRM Systems", link: "/crm" },
+        // { name: "CRM Systems", link: "/crm" },
         { name: "ERP Software", link: "/erp" },
         { name: "Portfolio Builder", link: "/portfolio" },
       ],
@@ -197,11 +197,11 @@ const Navbar = () => {
   >
     <div className="flex items-center gap-1 cursor-pointer">
       {item.link ? (
-        <Link to={item.link} className=" text-white hover:text-pink-600 bg-clip-text text-transparent">
+        <Link to={item.link} className=" text-white hover:text-[#FBBF24] bg-clip-text text-transparent">
           {item.title}
         </Link>
       ) : (
-        <span className="hover:text-purple-600">{item.title}</span>
+        <span className="hover:text-[#FBBF24]">{item.title}</span>
       )}
 
       {item.submenu && (

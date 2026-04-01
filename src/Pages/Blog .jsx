@@ -56,7 +56,7 @@ const Blog = () => {
     <div className="mt-[5rem]">
     <section className="bg-gray-50 text-gray-800">
       {/* Hero Section */}
-      <div className=" bg-gradient-to-r from-black to-[#1B3C73] -mt-20 text-white py-34 px-6 text-center">
+      <div className=" bg-gradient-to-b from-[#1B3C73] to-purple-400 -mt-20 text-white py-34 px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -86,7 +86,7 @@ const Blog = () => {
           className="bg-white rounded-2xl shadow-lg overflow-hidden mb-16"
         >
           <img
-            src="/main.jpg"
+            src="/_blog_.png"
             alt="Featured Blog"
             className="w-full h-[24rem] object-cover"
           />

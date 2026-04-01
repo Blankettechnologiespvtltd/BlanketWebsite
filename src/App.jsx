@@ -31,13 +31,15 @@ import RPO from './Pages/RPO';
 import PayrollPage from './Pages/PayrollPage';
 import GlobalSearch from './Pages/GlobalSearch';
 import ExecutiveSearch from './Pages/ExecutiveSearch';
-import ContractStaffing from './Pages/ContractStaffing';
+// import ContractStaffing from './Pages/ContractStaffing';
 import PermanentHiring from './Pages/PermanentHiring';
 import ProjectBasedHiring from './Pages/ProjectBasedHiring';
 import PrivacyPolicyPage from './Components/privacypolicy';
 import TermsConditionsPage from './Components/TermsConditionsPage';
 import SapImplementation from "./Pages/SapImplementation";
 import Footer from './Components/Footer';
+import Staffing from './Pages/Staffing';
+import Clients from './Pages/Clients';
 
 
 
@@ -133,34 +135,34 @@ const App = () => {
     path: "/Resume",
     element: <div>< ResumeUpload/></div>,
   },
-  // {
-  //   path: "/RPO",
-  //   element: <div><RPO /></div>,
-  // },
-  // {
-  //   path: "/Payroll",
-  //   element: <div><PayrollPage /></div>,
-  // },
-  // {
-  //   path: "/GlobalSearch",
-  //   element: <div><GlobalSearch /></div>,
-  // },
-  // {
-  //   path: "/ExecutiveSearch",
-  //   element: <div><ExecutiveSearch /></div>,
-  // },
-  // {
-  //   path: "/ContractStaffing",
-  //   element: <div><ContractStaffing /></div>,
-  // },
-  //  {
-  //   path: "/PermanentHiring",
-  //   element: <div><PermanentHiring /></div>,
-  // },
-  //  {
-  //   path: "/ProjectBasedHiring",
-  //   element: <div><ProjectBasedHiring /></div>,
-  // },
+  {
+    path: "/RPO",
+    element: <div><RPO /></div>,
+  },
+  {
+    path: "/Payroll",
+    element: <div><PayrollPage /></div>,
+  },
+  {
+    path: "/GlobalSearch",
+    element: <div><GlobalSearch /></div>,
+  },
+  {
+    path: "/ExecutiveSearch",
+    element: <div><ExecutiveSearch /></div>,
+  },
+  {
+    path: "/Staffing",
+    element: <div><Staffing /></div>,
+  },
+   {
+    path: "/PermanentHiring",
+    element: <div><PermanentHiring /></div>,
+  },
+   {
+    path: "/ProjectBasedHiring",
+    element: <div><ProjectBasedHiring /></div>,
+  },
   {
     path: "/privacypolicy",
     element: <div><PrivacyPolicyPage /></div>,
@@ -178,6 +180,11 @@ const App = () => {
     path: "/testimonial",
     element: <div><Testimonials /> <Footer /> </div>,
   },
+   {
+    path: "/Clients",
+    element: <Clients />,
+  },
+  
   
   
     ],

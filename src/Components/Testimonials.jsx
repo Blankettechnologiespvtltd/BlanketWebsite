@@ -40,11 +40,11 @@ const Testimonials = () => {
   const next = () => setIndex((prev) => (prev + 1) % testimonials.length);
   const prev = () => setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
 
-  // 👇 Auto slide function (this runs every 5 seconds)
+  // Auto slide function (this runs every 5 seconds)
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % testimonials.length);
-    }, 5000); // 5000ms = 5 seconds
+    }, 5000); 
 
     // cleanup function
     return () => clearInterval(interval);

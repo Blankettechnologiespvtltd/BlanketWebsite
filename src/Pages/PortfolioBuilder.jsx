@@ -5,7 +5,7 @@ const PortfolioBuilder = () => {
   return (
     <div className="bg-gray-50 text-gray-800 mt-[5rem]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-black to-[#1B3C73] -mt-20 text-white py-30 px-6 text-center">
+      <section className="bg-gradient-to-b from-[#1B3C73] to-purple-400 -mt-20 text-white py-30 px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

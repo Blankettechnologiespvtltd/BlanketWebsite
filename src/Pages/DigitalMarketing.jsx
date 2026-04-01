@@ -21,7 +21,7 @@ const DigitalMarketing = () => {
   return (
     <div className="bg-gray-50 min-h-screen mt-[6rem]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-black to-[#2654a5] -mt-24 text-white py-30 px-6 text-center">
+      <section className="bg-gradient-to-b from-[#1B3C73] to-purple-400 -mt-24 text-white py-30 px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}

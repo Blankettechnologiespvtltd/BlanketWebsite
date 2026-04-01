@@ -206,12 +206,20 @@ const Careers = () => {
         // initial={{ opacity: 0, y: 40 }}
         // whileInView={{ opacity: 1, y: 0 }}
         // transition={{ duration: 0.6 }}
-        className="text-center  mb-20  px-2  bg-gradient-to-b from-black to-[#1B3C73] gap-4 h-[35rem] md:h-[24rem] flex flex-col justify-center items-center -mt-20" 
+        className="text-center  mb-20  px-2  bg-gradient-to-b from-[#1B3C73] to-purple-400 gap-4 h-[35rem] md:h-[24rem] flex flex-col justify-center items-center -mt-20" 
       >
-        <h1 className=
-        "text-4xl md:text-5xl font-bold  text-white mt-28 md:mt-20 ">
+        {/* <h1 className=
+        "text-4xl md:text-5xl font-bold  text-white mt-28 md:mt-8 ">
          Your Next Big Career Move Starts Here
-        </h1>
+        </h1> */}
+         <motion.h1
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="text-4xl md:text-5xl font-bold  text-white mt-28 md:mt-8"
+                >
+                 Your Next Big Career Move Starts Here
+                </motion.h1>
         <p className="text-white max-w-3xl mx-auto text-lg leading-relaxed">
           At <span className="text-white font-semibold">Blanket Technologies</span>,  
           we’re redefining what it means to work in tech. We don’t just build products —  
